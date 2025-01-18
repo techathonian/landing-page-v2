@@ -145,13 +145,18 @@ interface Card {
 	title: string;
 	description: string;
 }
+interface Takestep {
+	id: string;
+	title: string;
+	content: string
+}
 export interface ProgrammesComponent{
 	id: string;
 	title: string;
 	subtitle: string;
 	body: Body[];
 	cards: Card[];
-	takestep: {};
+	takestep: Takestep;
 }
 
 ///---------------------ABOUT US------------------------////
@@ -198,7 +203,40 @@ export interface AboutEventComponent{
 
 
 //---------------------COURSE DETAILS------------------------////
-
+interface Common{
+	id: string;
+	title?: string; 
+	svg?: string;
+}
+interface  Highlight extends Common{
+	theme: string;
+}
+interface Summary extends Common{
+	description: string;
+	highlight:  Highlight[];
+}
+interface About extends Common{
+	body: string;
+}
+interface Details extends Common{
+	body: string[]
+}
+interface Course extends Common {
+	details: Details[]
+}
+interface  Certification extends Common{
+	description: string;
+}
+export interface CourseDetailsComponent {
+	id: string;
+	summary: Summary;
+	image: string;
+	about: About;
+	course: Course;
+	certification:  Certification
+	body: Body[]
+	cards: Card[]
+}
 /******COMPOENTS */
 
 // Button

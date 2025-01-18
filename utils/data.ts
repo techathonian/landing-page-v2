@@ -14,7 +14,8 @@ import {
   ProgrammesComponent,
   GuidePrincipleComponent,
   KeyPersonComponent,
-  AboutEventComponent
+  AboutEventComponent,
+  CourseDetailsComponent
 } from "./types";
 
 export const HEROCONTENT: HeroContent = {
@@ -472,6 +473,175 @@ export const EVENTSCOMPONENT: AboutEventComponent = {
 //---------------------COURSE DETAILS------------------------////
 export const COURSEDETAILSCOMPONENT: CourseDetailsComponent ={
   id: "1",
-  title: 'Digital Marketing & Content Creation',
-  
-}
+  summary: {
+    id: '1',
+    title: 'Digital Marketing & Content Creation',
+    description: "Learn Html, Css and Java Script, the building blocks of Front end Development to help you build pages and web applications that are responsive and user-friendly.",
+    highlight: [
+      {
+        id: "1",
+        svg: "https://www.markicon.com",
+        theme: "Beginner-friendly "
+      },
+      {
+        id: "2",
+        svg: "https://www.markicon.com",
+        theme: "100% online classes "
+      },
+      {
+        id: "3",
+        svg: "https://www.markicon.com",
+        theme: "5 - 6 hours every week"
+      },
+      {
+        id: "4",
+        svg: "https://www.markicon.com",
+        theme: "Up to 10 weeks learning"
+      },
+    ],
+  },
+  image: "https://description/image",
+  about:{
+    id: '1',
+    title: "About this Course",
+    body: "HTML, CSS and JavaScript are the main topics of this frontend development course. You will be able to understand the foundational technologies that establish the visual and interactive components of webpage in this course. Your design skills will advance as you learn how to organize headings, paragraphs, lists, photos, and more using HTML (Hyper-text Markup Language),which is the building blocks of web pages. The art of styling web pages, including managing colors, fonts, layouts, and responsive designs, can be explored with CSS. Beginning with the fundamentals of variables, data types, and control structures, you will learn Java Script"
+  },
+  course: {
+    id: "1",
+    title: "Course Content",
+    details: [
+      {
+        id: "1",
+        svg: "w3.svg.com",
+        title: "Introduction to Digital Marketing",
+        body: ["Understanding the basics of web development.",
+          "Setting up your development environment.",
+          "Introduction to HTML, CSS, and JavaScript."
+        ]
+      },
+      {
+        id: "2",
+        svg: "w3.svg.com",
+        title: "Social Media Marketing",
+        body: ["Understanding the basics of web development.",
+          "Setting up your development environment.",
+          "Introduction to HTML, CSS, and JavaScript."
+        ]
+      },
+      {
+        id: "3",
+        svg: "w3.svg.com",
+        title: "Website and Content Strategy",
+        body: ["Introduction to CSS.",
+          "Selectors and properties.",
+          "Box Model and layouts."
+        ]
+      },
+      {
+        id: "4",
+        svg: "w3.svg.com",
+        title: "Search Engine Optimization",
+        body: ["Positioning and display properties",
+          "Flexbox layout",
+          "CSS Grid layout"
+        ]
+      },
+      {
+        id: "5",
+        svg: "w3.svg.com",
+        title: "JavaScript Basics",
+        body: ["Introduction to CSS.",
+          "Selectors and properties.",
+          "Box Model and layouts."
+        ]
+      },
+      {
+        id: "6",
+        svg: "w3.svg.com",
+        title: "DOM Maninupulation",
+        body: ["Introduction to CSS.",
+          "Selectors and properties.",
+          "Box Model and layouts."
+        ]
+      },
+      {
+        id: "7",
+        svg: "w3.svg.com",
+        title: "Advanced JavaScript",
+        body: ["Arrays and objects",
+          "ES6 features.",
+          "Box Model and layouts."
+        ]
+      },
+      {
+        id: "8",
+        svg: "w3.svg.com",
+        title: "Assignment & Projects",
+        body: ["Arrays and objects",
+          "ES6 features.",
+          "Box Model and layouts."
+        ]
+      },
+    ]
+  },
+  certification: {
+    id: '1',
+    title: "Certification and Mentorship",
+    description: "You earn certification at the completion of the 8 weeks learning in your chosen track. Earning a certification at the of your learning track is paid and compulsory."
+  },
+  body: [
+		{
+			id: "1",
+			type: "part1",
+			svg: "w3.svg.com",
+			title: "Pre-mentorship",
+			main: 'Effective Transitioning',
+			first: "Up to date course outline \n Relevant information",
+			second: "Assignments \n Individual projects"
+		},
+		{
+			id: "2",
+			type: "part2",
+			svg: "w3.svg.com",
+			title: "Mentorship",
+			main: 'Hands-on approach',
+			first: "Cross functional team \n Practical classes ",
+			second: "Real time projects \n Exhibition & Start ups"
+		},
+		{
+			id: "3",
+			type: "Bonus",
+			svg: "w3.svg.com",	
+			title: "Techathon",
+			description:"Get tech skill training and get \n certified for 3000"
+		},
+		{
+			id: "4",
+			type: "Bonus",
+			svg: "w3.svg.com",	
+			title: "Jobberman",
+			description:"Get soft skill training and get \n certified for FREE"
+		}
+	],
+  cards: [
+		{
+		id: "1",
+		image: "htpps://techathon/pictures.com",
+		title: "Learn for FREE",
+		description: "Learn your desired tech skill seamlessly in 5weeks for FREE"
+	},
+	{
+		id: "2",
+		image: "htpps://techathon/pictures.com",
+		title: "Bootcamp",
+		description: "Work in a cross functional team and develope real time projects  and exhibition (6weeks) all at N10,000"
+	},
+	{
+		id: "3",
+		image: "htpps://techathon/pictures.com",
+		title: "Certification",
+		description: "Get duly certified  at the cost of N3,500"
+	},
+],
+  }
+  //FOOTER 
