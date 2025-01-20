@@ -645,3 +645,7 @@ export const COURSEDETAILSCOMPONENT: CourseDetailsComponent ={
 ],
   }
   //FOOTER 
+
+  // export const FOOTERCOMPONENT{
+
+  // }
