@@ -50,7 +50,7 @@ export default function Home() {
 					</a>
 				</div>
 				<Button
-					label='GET STARTED'
+					label='GET STARTEDX'
 					className=' bg-black text-white px-6 py-4 '
 				/>
 			</main>
