@@ -6,9 +6,9 @@ import { usePathname } from "next/navigation";
 interface NavLinkProps {
   href: string;
   label: string;
-  icon? string;
+  
 }
-const NavLink: React.FC<NavLinkProps> = ({href, label, icon}) => {
+const NavLink: React.FC<NavLinkProps> = ({href, label, }) => {
     const pathname = usePathname()
   return (
     <div>
