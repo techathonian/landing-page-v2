@@ -22,9 +22,13 @@ export const HEROCONTENT: HeroContent = {
   id: "1",
   title: "Transition into Tech Seamlessly",
   body: "Techathon is your gateway to a thriving career in tech. With thousands of individuals empowered, we take pride in nurturing aspiring talents and transforming them into seasoned practitioners in various tech domains.",
+  bullet1: "Seasoned mentors",
+  bullet2: "New tech developments",
+  bullet3: "Carry out realtime projects",
+  bullet4: "Work in functional team"
 };
 
-export const CORECOMPOENT: CoreComponent = {
+export const CORECOMPONENT: CoreComponent = {
   id: "1",
   title: "Core Components",
   content:
