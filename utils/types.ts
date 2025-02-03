@@ -2,6 +2,10 @@ export interface HeroContent {
 	id: string;
 	title: string;
 	body: string;
+	bullet1: string;
+	bullet2: string;
+	bullet3: string;
+	bullet4: string;
 }
 
 interface Features {
