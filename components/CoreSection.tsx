@@ -6,7 +6,7 @@ const CoreSection = () => {
   return (
      <div className="mt-24 lg:mt-24 md:mt-16">
           <div className="one mb-4">
-            <div className="head text-center text-xl font-[600]">
+            <div className="head flex flex-col text-center text-[24px]/[32px] md:text-[32px]/[36px]  lg:text-[40px]/[48px] font-[600]">
               {CORECOMPONENT.title}
             </div>
             <div className="body text-center">{CORECOMPONENT.content}</div>

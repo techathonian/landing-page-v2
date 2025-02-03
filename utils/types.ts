@@ -28,9 +28,14 @@ interface TrackBase {
 	subtitle: string;
 }
 interface Tracks extends TrackBase{
-	path: string;
-	front: string;
-	back: string;
+	path1: string;
+	path2?: string;
+	path3?: string;
+	coursea: string;
+	courseb: string;
+	coursec: string;
+	coursed: string;
+	coursef: string;
 }
 export interface TrackComponent{
 	id: string;

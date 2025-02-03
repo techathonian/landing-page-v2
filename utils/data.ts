@@ -52,7 +52,7 @@ export const CORECOMPONENT: CoreComponent = {
   ],
 };
 
-export const TRACTCOMPONENT: TrackComponent = {
+export const TRACKCOMPONENT: TrackComponent = {
   id: "1",
   title: "Tracks",
   content:
@@ -62,17 +62,26 @@ export const TRACTCOMPONENT: TrackComponent = {
       id: "1",
       title: "KICKSTARTER",
       subtitle: "In-demand coding tracks",
-      path: "FRONT END & BACK END",
-      front: "HTML & CSS \n Javascript \n React JS",
-      back: "Node JS \n Python + Django",
+      path1: "FRONT END & BACK END",
+      coursea: "HTML & CSS",
+      courseb: " Javascript",
+      coursec: "React JS",
+      coursed: "Node JS",
+      coursef: "Python + Django",
     },
     {
       id: "2",
       title: "KICKSTARTER",
       subtitle: "In-demand coding tracks",
-      path: "DESIGN MANAGEMENT \n Digital marketing",
-      front: "Graphic & Brand \n Design \n Product Design \n Technical writing",
-      back: "Data Analytics \n Product Mangement",
+      path1: "DESIGN",
+      path2: "MANAGEMENT",
+      path3: " Digital marketing",
+      coursea: "Graphic Design ",
+      courseb: "Product Design",
+      coursec: " Technical writing",
+      coursed: "Data Analytics ",
+      coursef: " Product Mangement",
+
     },
   ],
 };

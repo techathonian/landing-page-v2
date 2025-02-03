@@ -2,6 +2,7 @@ import Button from '@/components/Button';
 import Image from 'next/image';
 import HeroSection from './../components/HeroSection';
 import CoreSection from '@/components/CoreSection';
+import TracksSection from '@/components/TracksSection';
 
 export default function Home() {
 	return (
@@ -9,7 +10,7 @@ export default function Home() {
 			<main className='flex flex-col gap-8 row-start-2 items-center sm:items-start'>
 				<HeroSection />
 			    <CoreSection />
-			
+				<TracksSection/>
 				{/* <Button
 					label='GET STARTED'
 					className=' bg-black text-white px-6 py-4 '
