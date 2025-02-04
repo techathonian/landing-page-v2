@@ -22,9 +22,13 @@ export const HEROCONTENT: HeroContent = {
   id: "1",
   title: "Transition into Tech Seamlessly",
   body: "Techathon is your gateway to a thriving career in tech. With thousands of individuals empowered, we take pride in nurturing aspiring talents and transforming them into seasoned practitioners in various tech domains.",
+  bullet1: "Seasoned mentors",
+  bullet2: "New tech developments",
+  bullet3: "Carry out realtime projects",
+  bullet4: "Work in functional team"
 };
 
-export const CORECOMPOENT: CoreComponent = {
+export const CORECOMPONENT: CoreComponent = {
   id: "1",
   title: "Core Components",
   content:
@@ -48,7 +52,7 @@ export const CORECOMPOENT: CoreComponent = {
   ],
 };
 
-export const TRACTCOMPONENT: TrackComponent = {
+export const TRACKCOMPONENT: TrackComponent = {
   id: "1",
   title: "Tracks",
   content:
@@ -58,23 +62,33 @@ export const TRACTCOMPONENT: TrackComponent = {
       id: "1",
       title: "KICKSTARTER",
       subtitle: "In-demand coding tracks",
-      path: "FRONT END & BACK END",
-      front: "HTML & CSS \n Javascript \n React JS",
-      back: "Node JS \n Python + Django",
+      path1: "FRONT END & BACK END",
+      coursea: "HTML & CSS",
+      courseb: " Javascript",
+      coursec: "React JS",
+      coursed: "Node JS",
+      coursef: "Python + Django",
     },
     {
       id: "2",
       title: "KICKSTARTER",
       subtitle: "In-demand coding tracks",
-      path: "DESIGN MANAGEMENT \n Digital marketing",
-      front: "Graphic & Brand \n Design \n Product Design \n Technical writing",
-      back: "Data Analytics \n Product Mangement",
+      path1: "DESIGN",
+      path2: "MANAGEMENT",
+      path3: " Digital marketing",
+      coursea: "Graphic Design ",
+      courseb: "Product Design",
+      coursec: " Technical writing",
+      coursed: "Data Analytics ",
+      coursef: " Product Mangement",
+
     },
   ],
 };
 
 export const EVENTCOMPONENT: EventComponent = {
   id: "1",
+  header: "EVENTS",
   title:
     "Learning extends beyond the classroom. We believe in providing a vibrant and enriching learning experience, which is why we offer a range of events to keep you engaged, inspired, and connected with the tech community.",
   content: [
