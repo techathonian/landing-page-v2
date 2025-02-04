@@ -52,6 +52,7 @@ interface Content{
 }
 export interface EventComponent {
 	id: string;
+	header: string;
 	title: string;
 	content: Content[];
 } 

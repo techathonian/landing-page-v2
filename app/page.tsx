@@ -3,6 +3,7 @@ import Image from 'next/image';
 import HeroSection from './../components/HeroSection';
 import CoreSection from '@/components/CoreSection';
 import TracksSection from '@/components/TracksSection';
+import EventsSection from './../components/EventsSection';
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 				<HeroSection />
 			    <CoreSection />
 				<TracksSection/>
+				<EventsSection />
 				{/* <Button
 					label='GET STARTED'
 					className=' bg-black text-white px-6 py-4 '

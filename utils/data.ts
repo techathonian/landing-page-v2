@@ -88,6 +88,7 @@ export const TRACKCOMPONENT: TrackComponent = {
 
 export const EVENTCOMPONENT: EventComponent = {
   id: "1",
+  header: "EVENTS",
   title:
     "Learning extends beyond the classroom. We believe in providing a vibrant and enriching learning experience, which is why we offer a range of events to keep you engaged, inspired, and connected with the tech community.",
   content: [

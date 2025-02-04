@@ -2,7 +2,6 @@ import React from "react";
 import { TRACKCOMPONENT } from "./../utils/data";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
-import Button from './Button';
 import Link  from 'next/link';
 
 interface trackButtonProps{
@@ -34,7 +33,7 @@ const TracksSection = () => {
         <div className="two flex flex-col gap-5 lg:flex-row items-center justify-center">
           <div className="rounded-[24px] sub-1  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#E6EBFF] md:h-[612px] md:w-[584px] md:bg-[#E6EBFF] bg-[#ECF3FB]">
             <div className="header ml-5  flex flex-col gap-4">
-              <div className="flex gap-3 items-center ">
+              <div className="flex gap-3 items-center pt-3">
                 <div className="svg">
                   <Image
                     width={42}
@@ -79,14 +78,14 @@ const TracksSection = () => {
                 </div>
               </div>
             </div>
-            <div className="button text-right mr-6 md:mr-10  -mt-5 md:mt-3">
+            <div className="button text-right mr-6 md:mr-10  -mt-8 md:mt-3">
                 <TrackBtn href='#' label='Learn more' icon={<BsArrowRight />}/>
             </div>
           </div>
           <div className="sub-2 rounded-[24px]  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#FCD1FF] md:h-[612px] md:w-[584px] bg-[#F0E1DC]">
             <div className="header ml-5 flex flex-col gap-4">
               <div className="flex gap-3 items-center ">
-                <div className="devg-svg">
+                <div className="devg-svg pt-3">
                   <Image
                     width={48}
                     height={48}
@@ -132,13 +131,14 @@ const TracksSection = () => {
                 </div>
               </div>
             </div>
-            <div className="button text-right mr-6 md:mr-10 -mt-5 md:mt-3">
+            <div className="button text-right mr-6 md:mr-10 -mt-8 md:mt-3">
                 <TrackBtn href='#' label='Learn more' icon={<BsArrowRight />}/>
             </div>
           </div>
         </div>
         <div className="three"></div>
       </div>
+      <div className="bonus text-[14px]/[20px] font-[600] mt-4 text-center lg:text-start">BONUS: Get a Jobberman soft skill certificate on completion of the programme</div>
     </div>
   );
 };
