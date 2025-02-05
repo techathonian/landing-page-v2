@@ -176,22 +176,22 @@ export const FAQCOMPONENT: FaqComponent = {
     {
       id: "2",
       question:
-        "Techathon is your gateway to a thriving career in tech. With thousands of individuals?",
+        "Techathon is your gateway to a thriving career in tech. With thousands of individuals2?",
     },
     {
       id: "3",
       question:
-        "Techathon is your gateway to a thriving career in tech. With thousands of individuals?",
+        "Techathon is your gateway to a thriving career in tech. With thousands of individuals3?",
     },
     {
       id: "4",
       question:
-        "Techathon is your gateway to a thriving career in tech. With thousands of individuals?",
+        "Techathon is your gateway to a thriving career in tech. With thousands of individuals4?",
     },
     {
       id: "5",
       question:
-        "Techathon is your gateway to a thriving career in tech. With thousands of individuals?",
+        "Techathon is your gateway to a thriving career in tech. With thousands of individuals5?",
     },
   ],
   answers: [
