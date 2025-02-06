@@ -247,7 +247,7 @@ export const FOOTERCOMPONENT: FooterComponent = {
   ],
   subtitle: "Take the giant leap towards mastering that tech skill",
   description:
-    "Take the first step towards an exciting tech journey. Join our vibrant community of learners, mentors, and tech enthusiasts. Let's explore, learn, and innovate together.",
+    "Take the first step towards an exciting tech journey.  Join our vibrant community of learners, mentors, and tech enthusiasts. Let's explore, learn, and innovate together.",
   footer: "FOOTER",
 };
 
