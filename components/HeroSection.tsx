@@ -4,7 +4,7 @@ import Image from "next/image";
 import Button from "./Button";
 import { AiOutlineCaretRight } from "react-icons/ai";
 import { VscDebugStart } from "react-icons/vsc";
-import { motion, easeOut } from "framer-motion";
+//import { motion, easeOut } from "framer-motion";
 
 
 
@@ -16,7 +16,7 @@ const HeroSection = () => {
  
 
   return (
-    <div className="main text-[#481DA6] md:w-full ">
+    <div className="main text-[#481DA6] place-items-center ">
       <div className="star w-[40px] h-[40px]">
         <Image
           width={40}
@@ -27,7 +27,7 @@ const HeroSection = () => {
         />
       </div>
       <div className="cont grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="flex justify-center items-center  gap-8">
+        <div className="flex justify-center items-center  gap-[48px]">
           <div className=" w-[512px] h-[408px] lg:h-[416px]  place-items-center ">
             <div className="header text-[39px] lg:text-[48px] leading-10 mb-4 text-center  lg:text-start   font-[500] ">{HEROCONTENT.title}</div>
             <div className="body  text-[18px] text-center lg:text-start leading-[24px] ">{HEROCONTENT.body}</div>
@@ -94,7 +94,7 @@ const HeroSection = () => {
         </div>
               
 
-        <div className=" lg:w-[512px] lg:h-[531px] order-first lg:order-last lg:-mt-24  place-items-center">
+        <div className=" md:w-[521px] md:h-[531px] lg:w-[512px]  order-first lg:order-last lg:-mt-24  place-items-center">
           <Image
             width={512}
             height={531}

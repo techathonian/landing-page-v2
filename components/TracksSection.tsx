@@ -20,9 +20,9 @@ export const TrackBtn : React.FC<trackButtonProps> = ({href, label, icon}) => {
 
 const TracksSection = () => {
   return (
-    <div>
+    <div className="place-items-center">
       <div className="">
-        <div className="one flex flex-col gap-[16px]  mb-4">
+        <div className="one flex flex-col gap-[16px]  mb-4 lg:w-[1200px] md:w-[712px] w-340px">
           <div className="head text-center font-[600] text-[24px]/[32px] md:text-[32px]/[36px]  lg:text-[40px]/[48px]">
             {TRACKCOMPONENT.title}
           </div>

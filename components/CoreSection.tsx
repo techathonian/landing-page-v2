@@ -5,7 +5,7 @@ import Image from "next/image";
 const CoreSection = () => {
   return (
      <div className="mt-24 lg:mt-24 md:mt-16 place-items-center">
-          <div className="one mb-4">
+          <div className="one mb-4 lg:w-[1200px] md:w-[712px] w-340px">
             <div className="head flex flex-col text-center text-[24px]/[32px] md:text-[32px]/[36px]  lg:text-[40px]/[48px] font-[600]">
               {CORECOMPONENT.title}
             </div>

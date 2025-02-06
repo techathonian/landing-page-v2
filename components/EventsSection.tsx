@@ -6,7 +6,7 @@ const EventsSection = () => {
   return (
     <div>
         <div className="3tree place-items-center mt-3">
-            <div className="hHEAD flex flex-col mb-3">
+            <div className="hHEAD flex flex-col mb-3 lg:w-[1200px] md:w-[712px] w-340px">
                 <div className="header text-center text-[24px]/[32px] md:text-[40px]/[48px] font-[600]">{EVENTCOMPONENT.header}</div>
                 <div className="content text-center text-[16px]/[24px] lg:text-[18px]/[24px] font-[400]">{EVENTCOMPONENT.title}</div>
             </div>
