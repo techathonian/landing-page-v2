@@ -1,4 +1,8 @@
-import React from "react";
+"use client"
+
+import {motion, useInView} from "framer-motion"
+import React, { useRef } from "react"
+
 import { TRACKCOMPONENT } from "./../utils/data";
 import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
@@ -11,7 +15,8 @@ interface trackButtonProps{
 }
 
 export const TrackBtn : React.FC<trackButtonProps> = ({href, label, icon}) => {
-  return (
+
+    return (
     <div className="">
       <button ><Link href={href} className="inline-flex items-center gap-4"> {label}  {icon} </Link> </button>
     </div>
@@ -19,19 +24,46 @@ export const TrackBtn : React.FC<trackButtonProps> = ({href, label, icon}) => {
 }
 
 const TracksSection = () => {
+
+  const ref = useRef(null);
+    const isInView = useInView(ref, {
+        once: true
+    })
+
   return (
-    <div className="place-items-center">
+     <motion.div 
+        ref={ref}
+        initial={{
+           opacity: 0,
+           y:50
+        }}
+        animate={
+           isInView ? {
+               opacity: 1, y: 0
+           } : {
+               opacity: 0, y:50
+           }
+        }
+        transition={{
+           duration: 6
+        }} className="place-items-center">
       <div className="">
-        <div className="one flex flex-col gap-[16px]  mb-4 lg:w-[1200px] md:w-[712px] w-340px">
+        <div className="one flex flex-col gap-[16px]  mb-6 lg:w-[1200px] md:w-[712px] w-340px">
           <div className="head text-center font-[600] text-[24px]/[32px] md:text-[32px]/[36px]  lg:text-[40px]/[48px]">
             {TRACKCOMPONENT.title}
           </div>
-          <div className="body text-center text-[16px]/[24px] lg:text-[18px]/[24px]">
+          <div className="px-3 body text-center text-[16px]/[24px] lg:text-[18px]/[24px]">
             {TRACKCOMPONENT.content}
           </div>
         </div>
+        
         <div className="two flex flex-col gap-5 lg:flex-row items-center justify-center">
-          <div className="rounded-[24px] sub-1  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#E6EBFF] md:h-[612px] md:w-[584px] md:bg-[#E6EBFF] bg-[#ECF3FB]">
+        {/* ///// */}
+      <motion.div 
+        initial={{opacity: 0, x: -150}}
+          animate={
+            isInView ? {opacity: 1, x: 0}: {opacity: 0, x:-150}}
+          transition={{duration: 8.5}}  className="rounded-[24px] sub-1  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#E6EBFF] md:h-[612px] md:w-[584px] md:bg-[#E6EBFF] bg-[#ECF3FB]">
             <div className="header ml-5  flex flex-col gap-4">
               <div className="flex gap-3 items-center pt-3">
                 <div className="svg">
@@ -81,8 +113,12 @@ const TracksSection = () => {
             <div className="button text-right mr-6 md:mr-10  -mt-8 md:mt-3">
                 <TrackBtn href='#' label='Learn more' icon={<BsArrowRight />}/>
             </div>
-          </div>
-          <div className="sub-2 rounded-[24px]  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#FCD1FF] md:h-[612px] md:w-[584px] bg-[#F0E1DC]">
+          </motion.div>
+          {/**ghjfh */}
+          <motion.div 
+        initial={{opacity: 0, x: 150}}
+          animate={ isInView ? {opacity: 1, x: 0} : {opacity: 0, x: 150}}
+          transition={{duration: 8.5}}  className="sub-2 rounded-[24px]  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#FCD1FF] md:h-[612px] md:w-[584px] bg-[#F0E1DC]">
             <div className="header ml-5 flex flex-col gap-4">
               <div className="flex gap-3 items-center ">
                 <div className="devg-svg pt-3">
@@ -134,12 +170,13 @@ const TracksSection = () => {
             <div className="button text-right mr-6 md:mr-10 -mt-8 md:mt-3">
                 <TrackBtn href='#' label='Learn more' icon={<BsArrowRight />}/>
             </div>
-          </div>
+          </motion.div>
+        {/* ///// */}
         </div>
         <div className="three"></div>
       </div>
       <div className="bonus text-[14px]/[20px] font-[600] mt-4 text-center lg:text-start">BONUS: Get a Jobberman soft skill certificate on completion of the programme</div>
-    </div>
+    </motion.div>
   );
 };
 

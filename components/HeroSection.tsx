@@ -1,10 +1,12 @@
-import React from "react";
+"use client"
+
+import {motion, useInView} from "framer-motion"
+import React, { useRef } from "react"
 import { HEROCONTENT } from "../utils/data";
 import Image from "next/image";
 import Button from "./Button";
 import { AiOutlineCaretRight } from "react-icons/ai";
 import { VscDebugStart } from "react-icons/vsc";
-//import { motion, easeOut } from "framer-motion";
 
 
 
@@ -13,10 +15,28 @@ import { VscDebugStart } from "react-icons/vsc";
 //   hidden: 
 // }
 const HeroSection = () => {
- 
+  const ref = useRef(null);
+  const isInView = useInView(ref, {
+      once: true
+  })
 
   return (
-    <div className="main text-[#481DA6] place-items-center ">
+    <motion.div 
+    ref={ref}
+    initial={{
+       opacity: 0,
+       y:50
+    }}
+    animate={
+       isInView ? {
+           opacity: 1, y: 0
+       } : {
+           opacity: 0, y:50
+       }
+    }
+    transition={{
+       duration: 3
+    }} className="main text-[#481DA6] place-items-center ">
       <div className="star w-[40px] h-[40px]">
         <Image
           width={40}
@@ -29,46 +49,74 @@ const HeroSection = () => {
       <div className="cont grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="flex justify-center items-center  gap-[48px]">
           <div className=" w-[512px] h-[408px] lg:h-[416px]  place-items-center ">
-            <div className="header text-[39px] lg:text-[48px] leading-10 mb-4 text-center  lg:text-start   font-[500] ">{HEROCONTENT.title}</div>
-            <div className="body  text-[18px] text-center lg:text-start leading-[24px] ">{HEROCONTENT.body}</div>
+            <motion.div 
+            initial={{opacity:0 , y: 50}}
+            animate={{opacity:1, y: 0}}
+            transition={{duration: 2.4}}
+            className="header text-[39px] lg:text-[48px] leading-10 mb-4 text-center  lg:text-start   font-[500] ">{HEROCONTENT.title}</motion.div>
+            <motion.div 
+            initial={{opacity:0 , y: -50}}
+            animate={{opacity:1, y: 0}}
+            transition={{duration: 2.8}}
+            className="body  text-[18px] text-center lg:text-start leading-[24px] ">{HEROCONTENT.body}</motion.div>
             <div className="buttblue">
               <div className="button">
-                <div className="md:w-full place-items-center lg:block md:flex md:items-center md:justify-center">
-                  <Button
+                <motion.div 
+                whileHover={{scale: 1.2}}
+                whileTap={{scale: 0.9}}
+                 initial={{opacity: 0, x: 30}}
+                 whileInView={{opacity: 1, x: -30}}
+                 transition={{duration: 4.1}}
+                className="md:w-full w-full flex place-items-center lg:block md:flex md:items-center md:justify-center ">
+                  <Button 
                     label="Get Started"
                     className="text-center w-[290px] md:w-[136px] bg-[#481DA6] text-white font-[200] h-[40px] my-8 rounded-sm"
                   />
-                </div>
+                </motion.div>
               </div>
             </div>
             <div className="">
             <div  className="bullets text-end lg:text-center h-[116px] w-[300px] lg:w-[512px] md:w-full grid lg:grid-cols-2 md:grid-cols-2 gap-2">
-              <p className="pl-20 lg:pl-1 md:pl-1 ml-2 flex lg:flex-none items-center">
+              <motion.p 
+                 initial={{opacity: 0, x: 30}}
+                 whileInView={ isInView ? {opacity: 1, x: -30} : {opacity: 0, x:30}}
+                 transition={{duration: 4.7}}
+                 className="pl-20 lg:pl-1 md:pl-1 ml-2 flex lg:flex-none items-center">
                 <AiOutlineCaretRight className="hidden lg:block" />{" "}
                 <VscDebugStart className="block lg:hidden" />{" "}
                 <span> {HEROCONTENT.bullet1}</span>{" "}
-              </p>
-              <p className="pl-14 lg:pl-1 md:pl-1 ml-2 flex lg:flex-none items-center">
+              </motion.p>
+              <motion.p 
+                 initial={{opacity: 0, x: -30}}
+                 whileInView={ isInView ? {opacity: 1, x: 30} : {opacity: 0, x: -30}}
+                 transition={{duration: 4.7}}
+                 className="pl-14 lg:pl-1 md:pl-1 ml-2 flex lg:flex-none items-center">
                 <AiOutlineCaretRight className="hidden lg:block" />{" "}
                 <VscDebugStart className="block lg:hidden" />{" "}
                 <span> {HEROCONTENT.bullet2}</span>{" "}
-              </p>
+              </motion.p>
 
-              <p className="pl-10 lg:pl-1 md:pl-1 md:pr-2 ml-2 flex lg:flex-none items-center ">
+              <motion.p 
+                 initial={{opacity: 0, x: 30}}
+                 whileInView={ isInView ? {opacity: 1, x: -30} : {opacity: 0, x: 30}}
+                 transition={{duration: 4.7}} className="pl-10 lg:pl-1 md:pl-1 md:pr-2 ml-2 flex lg:flex-none items-center ">
                 <AiOutlineCaretRight className="hidden lg:block" />{" "}
                 <VscDebugStart className="block lg:hidden" />
                 <span className="text-nowrap">
                   {" "}
                   {HEROCONTENT.bullet3}{" "}
                 </span>{" "}
-              </p>
-              <p className="pl-6 lg:pl-1 md:pl-1 ml-2 flex lg:flex-none items-center ">
+              </motion.p>
+              <motion.p 
+                 initial={{opacity: 0, x: -30}}
+                 whileInView={ isInView ? {opacity: 1, x: 30} : {opacity: 0, x: -30}}
+                 transition={{duration: 4.7}} className="pl-6 lg:pl-1 md:pl-1 ml-2 flex lg:flex-none items-center ">
                 <AiOutlineCaretRight className="hidden lg:block" />{" "}
                 <VscDebugStart className="block lg:hidden" />
                 <span className="text-nowrap">
                 {HEROCONTENT.bullet4}
                 </span>{" "}
-              </p>
+              </motion.p>
             </div>
             <div className="blue -mt-36 lg:mt-11 lg:ml-80 w-[76.5px] [h-62.5px] md:-mt-48 md:ml-16">
                 <Image
@@ -94,7 +142,11 @@ const HeroSection = () => {
         </div>
               
 
-        <div className=" md:w-[521px] md:h-[531px] lg:w-[512px]  order-first lg:order-last lg:-mt-24  place-items-center">
+        <motion.div 
+          initial={{opacity: 0, x: 50}}
+          animate={{opacity: 1, x: 0}}
+          transition={{duration: 2}}
+          className=" md:w-[521px] md:h-[531px] lg:w-[512px]  order-first lg:order-last lg:-mt-24  place-items-center">
           <Image
             width={512}
             height={531}
@@ -103,9 +155,9 @@ const HeroSection = () => {
             priority
             className="-mt-20 md:"
           />
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

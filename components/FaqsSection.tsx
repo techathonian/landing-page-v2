@@ -4,6 +4,8 @@ import { FAQCOMPONENT } from '@/utils/data';
 import { BiChevronDown } from "react-icons/bi";
 import { BiChevronUp } from "react-icons/bi";
 import Faqbtn from './faqbtn';
+import { motion } from 'framer-motion';
+
 
 const FaqsSection = () => {
   const [selected, setSelected] = useState<number | null>(null);
@@ -13,7 +15,11 @@ const FaqsSection = () => {
   };
 
   return (
-    <div className="flex place-items-center">
+    <motion.div 
+    initial={{opacity: 0, scale: 0}}
+    whileInView={{opacity: 1, scale: 1}}
+    transition={{duration: 2}}
+      className="flex place-items-center">
       <div className="flex flex-col gap-6 my-4">
       <div className="header text-center text-[24px]/[32px] font-[600] md:text-[40px]/[48px]">{FAQCOMPONENT.title}</div>
 
@@ -33,7 +39,7 @@ const FaqsSection = () => {
         })}
       </div>
     </div>
-    </div>
+    </motion.div>
   );
 };
 

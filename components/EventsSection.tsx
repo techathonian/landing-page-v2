@@ -1,17 +1,42 @@
+"use client"
+
+import {motion, useInView} from "framer-motion"
+import React, { useRef } from "react"
+
 import { EVENTCOMPONENT } from '@/utils/data'
-import React from 'react'
 import Image from "next/image"
 
 const EventsSection = () => {
+  const ref = useRef(null);
+    const isInView = useInView(ref, {
+        once: true
+    })
   return (
-    <div>
+     <motion.div 
+        ref={ref}
+        initial={{
+           opacity: 0,
+           y:50
+        }}
+        animate={
+           isInView ? {
+               opacity: 1, y: 0
+           } : {
+               opacity: 0, y:50
+           }
+        }
+        transition={{
+           duration: 6
+        }}>
         <div className="3tree place-items-center mt-3">
-            <div className="hHEAD flex flex-col mb-3 lg:w-[1200px] md:w-[712px] w-340px">
+            <div className="hHEAD flex flex-col mb-6 lg:w-[1200px] md:w-[712px] w-340px">
                 <div className="header text-center text-[24px]/[32px] md:text-[40px]/[48px] font-[600]">{EVENTCOMPONENT.header}</div>
-                <div className="content text-center text-[16px]/[24px] lg:text-[18px]/[24px] font-[400]">{EVENTCOMPONENT.title}</div>
+                <div className="content px-3 text-center text-[16px]/[24px] lg:text-[18px]/[24px] font-[400]">{EVENTCOMPONENT.title}</div>
             </div>
             <div className="MIDDLE flex flex-col lg:flex-row gap-6 mb-7">
-                <div className="MID-1  shadow-2xl flex flex-col items-center w-[340px] h-[326px] md:w-[380px] md:h-[364px] lg:h-[372px] rounded-[24px]">
+                <div 
+                  
+                  className="MID-1 shadow-2xl flex flex-col items-center w-[340px] h-[326px] md:w-[380px] md:h-[364px] lg:h-[372px] rounded-[24px]">
                     <div className="svg-1 w-[306px] h-[182px] mt-2  md:w-[348px] md:h-[182px] md-rounded-[8px] ">
                         <Image
                                   width={348}
@@ -147,7 +172,7 @@ const EventsSection = () => {
             </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
