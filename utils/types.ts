@@ -2,6 +2,10 @@ export interface HeroContent {
 	id: string;
 	title: string;
 	body: string;
+	bullet1: string;
+	bullet2: string;
+	bullet3: string;
+	bullet4: string;
 }
 
 interface Features {
@@ -24,9 +28,14 @@ interface TrackBase {
 	subtitle: string;
 }
 interface Tracks extends TrackBase{
-	path: string;
-	front: string;
-	back: string;
+	path1: string;
+	path2?: string;
+	path3?: string;
+	coursea: string;
+	courseb: string;
+	coursec: string;
+	coursed: string;
+	coursef: string;
 }
 export interface TrackComponent{
 	id: string;
@@ -43,6 +52,7 @@ interface Content{
 }
 export interface EventComponent {
 	id: string;
+	header: string;
 	title: string;
 	content: Content[];
 } 
@@ -192,7 +202,8 @@ export interface KeyPersonComponent{
 	id: string;
 	title: string;
 	description: string;
-	persons: Persons[]
+	persons: Persons[];
+	summary: string;
 }
 export interface AboutEventComponent{
 	id: string;
