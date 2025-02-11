@@ -9,7 +9,7 @@ import FaqsSection from './../components/FaqsSection';
 import Testimonial from './../components/Testimonial'
 import Partners from './../components/Partners';
 import Footer from './../components/Footer';
-import Needed from '@/components/needed';
+
 export default function Home() {
 	return (
 		<div className='items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-montserrat)]'>
@@ -27,7 +27,6 @@ export default function Home() {
 				<Footer />
 			</footer>
 
-			<Needed />
 		</div>
 	);
 }

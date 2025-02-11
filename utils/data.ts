@@ -360,7 +360,7 @@ export const NOCODINGTRACKS: NoCodingTracks = {
 			type: "Bonus",
 			svg: "w3.svg.com",	
 			title: "Techathon",
-			description:"Get tech skill training and get \n certified for 3000"
+			description:"Get tech skill training and get certified for <b>3000</b>"
 		},
 		{
 			id: "4",
@@ -375,19 +375,19 @@ export const NOCODINGTRACKS: NoCodingTracks = {
 		id: "1",
 		image: "htpps://techathon/pictures.com",
 		title: "Learn for FREE",
-		description: "Learn your desired tech skill seamlessly in 5weeks for FREE"
+		description: "Learn your desired tech skill seamlessly in 5weeks for <b>FREE<b>"
 	},
 	{
 		id: "2",
 		image: "htpps://techathon/pictures.com",
 		title: "Bootcamp",
-		description: "Work in a cross functional team and develope real time projects  and exhibition (6weeks) all at N10,000"
+		description: "Work in a cross functional team and develope real time projects  and exhibition (6weeks) all at <b>N10,000<b>"
 	},
 	{
 		id: "3",
 		image: "htpps://techathon/pictures.com",
 		title: "Certification",
-		description: "Get duly certified  at the cost of N3,500"
+		description: "Get duly certified  at the cost of <b>N3,500<b>"
 	},
 ],
 

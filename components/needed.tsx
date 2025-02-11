@@ -27,14 +27,11 @@ const Needed = () => {
             </div>
           </div>
 
-          <div className="w-[308px] h-[108px] bg-white md:w-[310px] border-[1px] border-[#141414] rounded-[8px] ">
+          <div className="w-[308px] h-[108px] bg-white md:w-[310px] border-[1px] border-[#141414] rounded-[8px] flex items-center justify-center">
           <p  dangerouslySetInnerHTML={{ __html: PROGRAMMESCOMPONENT.body[3].description }}/>
         </div>
         </div>
-        {/* <div className="w-[308px] h-[108px] bg-white md:w-[310px] md:h-[">
-          <p></p>
-          <p></p>
-        </div> */}
+       
       </div>
     </div>
   );
