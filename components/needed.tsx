@@ -1,94 +1,43 @@
-import React from "react";
-import { TRACKCOMPONENT } from "./../utils/data";
+import { PROGRAMMESCOMPONENT } from "@/utils/data";
 import Image from "next/image";
-import { BsArrowRight } from "react-icons/bs";
-import Button from './Button';
-import Link  from 'next/link';
+import React from "react";
 
-interface trackButtonProps{
-    href: string;
-    label: string;
-    icon?: React.ReactNode
-}
-
-export const TrackBtn : React.FC<trackButtonProps> = ({href, label, icon}) => {
-  return (
-    <div className="">
-      <button ><Link href={href} className="inline-flex items-center gap-4"> {label}  {icon} </Link> </button>
-    </div>
-  )
-}
-
-const TracksSection = () => {
+const Needed = () => {
   return (
     <div>
-      <div className="">
-        <div className="one flex flex-col gap-[16px] border-4 ">
-          <div className="head text-center font-[600] text-[24px]/[32px] md:text-[32px]/[36px]  lg:text-[40px]/[48px]">
-            {TRACKCOMPONENT.title}
+      <div className="small-one  w-[340px] h-[256px] md:w-[585px] md:h-[209px] lg:w-[585px] lg:h-[209px] lg:rounded-[24px] lg:bg-[#FCD1FF]">
+        <div className="flex flex-col border-4  items-center justify-evenly border-red-500 md:flex-row w-[340px] h-[256px] md:w-[585px] md:h-[209px] lg:w-[585px] lg:h-[209px] ">
+          <div className="flex flex-col gap-0 border-4 items-start -mt-9 border-gggg">
+            <div className="flex gap-3 items-center pt-3">
+              <div className="svg">
+                <Image
+                  width={42}
+                  height={42}
+                  src="/cjet.svg"
+                  alt="TECHATHON"
+                  priority
+                />
+              </div>
+              <div className="kik text-[20px]/[24px] font-[500] text-[#350100] underline underline-offset-[11px] decoration-4">
+                {PROGRAMMESCOMPONENT.body[3].type}
+              </div>
+            </div>
+            <div className="header-text text-start text-[32px]/[36px] font-[500]">
+              {PROGRAMMESCOMPONENT.body[3].title}
+            </div>
           </div>
-          <div className="body text-center text-[16px]/[24px] lg:text-[18px]/[24px]">
-            {TRACKCOMPONENT.content}
-          </div>
+
+          <div className="w-[308px] h-[108px] bg-white md:w-[310px] border-[1px] border-[#141414] rounded-[8px] ">
+          <p  dangerouslySetInnerHTML={{ __html: PROGRAMMESCOMPONENT.body[3].description }}/>
         </div>
-        <div className="two flex flex-col gap-5 lg:flex-row ">
-          <div className="sub-1 border-4 w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#E6EBFF] md:h-[612px] md:w-[584px] md:bg-[#E6EBFF] bg-[#ECF3FB]">
-            <div className="header ml-5  flex flex-col gap-4">
-              <div className="flex gap-3 items-center border-4">
-                <div className="svg">
-                  <Image
-                    width={48}
-                    height={48}
-                    src="/cjet.svg"
-                    alt="TECHATHON"
-                    priority
-                  />
-                </div>
-                <div className="kik text-[20px]/[28px] font-[500] text-[#350100] underline underline-offset-[11px] decoration-4">
-                  {TRACKCOMPONENT.tracks[0].title}
-                </div>
-              </div>
-              <div className="header-text">In-demand Coding tracks</div>
-            </div>
-            <div className="flexx bg-green-300 border-4 h-[415px]"></div>
-            <div className="button">
-                <TrackBtn href='#' label='Learn more' icon={<BsArrowRight />}/>
-            </div>
-          </div>
-          <div className="sub-2 border-4 w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#FCD1FF] md:h-[612px] md:w-[584px] bg-[#F0E1DC]">
-            <div className="header ml-5 flex flex-col gap-4">
-              <div className="flex gap-3 items-center border-4">
-                <div className="svg">
-                  <Image
-                    width={48}
-                    height={48}
-                    src="/djet.svg"
-                    alt="TECHATHON"
-                    priority
-                  />
-                </div>
-                <div className="kik text-[20px]/[28px] font-[500] text-[#350100] underline underline-offset-[11px] decoration-4">
-                  {TRACKCOMPONENT.tracks[0].title}
-                </div>
-              </div>
-              <div className="header-text">In-demand Coding tracks</div>
-            </div>
-            <div className="flexx bg-green-300 border-4 h-[415px]">
-              <div className="big"></div>
-              <div className="smalls">
-                <div className="small1"></div>
-                .small2
-              </div>
-            </div>
-            <div className="button">
-                <TrackBtn href='#' label='Learn more' icon={<BsArrowRight />}/>
-            </div>
-          </div>
         </div>
-        <div className="three"></div>
+        {/* <div className="w-[308px] h-[108px] bg-white md:w-[310px] md:h-[">
+          <p></p>
+          <p></p>
+        </div> */}
       </div>
     </div>
   );
 };
 
-export default TracksSection;
+export default Needed;

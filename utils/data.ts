@@ -255,7 +255,7 @@ export const FOOTERCOMPONENT: FooterComponent = {
 
 export const COURSEINTROCOMPONENT: CourseIntroComponent = {
   id: "1",
-  title: "We teach \n in-demand Tracks",
+  title: "We teach in-demand Tracks",
   content:
     "Techathon is your gateway to a thriving career in tech. With thousands of individuals empowered, we take pride in nurturing aspiring talents and transforming them into seasoned practitioners in various tech domains.",
 };
@@ -339,16 +339,16 @@ export const NOCODINGTRACKS: NoCodingTracks = {
 	body: [
 		{
 			id: "1",
-			type: "part1",
+			type: "Part1",
 			svg: "w3.svg.com",
 			title: "Pre-mentorship",
 			main: 'Effective Transitioning',
-			first: "Up to date course outline \n Relevant information",
-			second: "Assignments \n Individual projects"
+			first: "Up to date course outline Relevant information",
+			second: "Assignments Individual projects"
 		},
 		{
 			id: "2",
-			type: "part2",
+			type: "Part2",
 			svg: "w3.svg.com",
 			title: "Mentorship",
 			main: 'Hands-on approach',
@@ -367,7 +367,7 @@ export const NOCODINGTRACKS: NoCodingTracks = {
 			type: "Bonus",
 			svg: "w3.svg.com",	
 			title: "Jobberman",
-			description:"Get soft skill training and get \n certified for FREE"
+			description: `Get soft skill training and get certified for <b>FREE</b>`
 		}
 	],
 	cards: [
@@ -401,7 +401,7 @@ takestep: {
 ////---------------------------ABOUT US-----------------------///
 export const ABOUTUSCOMPONENT: AboutUsComponent = {
   id: '1',
-  title: 'ABOUT US',
+  title: 'about us',
   content: "Techathon  is a mentorship and open source community that provides seamless transition to those who want to transition into tech regardless of their career background with the right resources they need to make their journey smooth , inclusive and fun. We make acquiring tech skills seamless for anyone transitionsing into tech from any career.",
   subtitle: [
     {
@@ -474,14 +474,15 @@ export const KEYPERSONCOMPONENT: KeyPersonComponent = {
       title: 'Community advocates',
       content: "There are persons representing the community out there to help people who want to transition to tech easily and interested in open source navigate their way to Techathon from anywhere in the world."
     },
-  ]
+  ],
+  summary: "Together, these key individuals make up the Techathon team, a dynamic group of passionate individuals dedicated to fostering tech education, collaboration, and innovation. Join us, as we build the future of tech together."
 }
 
 export const EVENTSCOMPONENT: AboutEventComponent = {
   id: "1",
   title: "EVENTS",
   subtitle: "Community Hangout",
-  description: "The techathon community hangout  is for every member of the community to meet physically after the virtual connect and see their friends and teammates physically and enjoy themselves at the end of the every cohort. We have mentors who are proffessionally trained and qualified , ready to guide mentees, help them to  explore where they are in their career, where they want to go and how they will get there. At techathon, we live out our  values everyday to create a culture that is diverse, inclusive and committed to helping mentees thrive. Our mentors spend up to  5-6 hours with mentees in a week to ensure transitioning is smooth and fun, classes are virtual and very interactive for mentees. The community also holds various programs like inter-track competitions, games, career talks, weekly calls etc. to ensure interactiveness in the community."
+  description: "The techathon community hangout  is for every member of the community to meet physically after the virtual connect and see their friends and teammates physically and enjoy themselves at the end of the every cohort."
 }
 
 //---------------------COURSE DETAILS------------------------////

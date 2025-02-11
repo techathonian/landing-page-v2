@@ -32,8 +32,8 @@ const Navbar = () => {
 
      <div className={`lg:h-[48px]  font-light space-y-4 ${!open ? 'hidden' : 'block col-start-2 md:col-start-1'} lg:flex lg:items-center lg:justify-center lg:flex-row lg:space-x-[8px] lg:space-y-0 lg:w-[261px] lg:text-[18px]/[24px] lg:font-[400] lg:p-[4px]`}>
       <NavLink href="/" label="Home"/>
-      <NavLink href="/aboutus" label="About Us"/>
-      <NavLink href="/tracks" label="Tracks"/>
+      <NavLink href="/About-Us" label="About Us"/>
+      <NavLink href="/Tracks" label="Tracks"/>
     </div>
 
 

@@ -202,7 +202,8 @@ export interface KeyPersonComponent{
 	id: string;
 	title: string;
 	description: string;
-	persons: Persons[]
+	persons: Persons[];
+	summary: string;
 }
 export interface AboutEventComponent{
 	id: string;
