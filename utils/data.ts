@@ -22,9 +22,13 @@ export const HEROCONTENT: HeroContent = {
   id: "1",
   title: "Transition into Tech Seamlessly",
   body: "Techathon is your gateway to a thriving career in tech. With thousands of individuals empowered, we take pride in nurturing aspiring talents and transforming them into seasoned practitioners in various tech domains.",
+  bullet1: "Seasoned mentors",
+  bullet2: "New tech developments",
+  bullet3: "Carry out realtime projects",
+  bullet4: "Work in functional team"
 };
 
-export const CORECOMPOENT: CoreComponent = {
+export const CORECOMPONENT: CoreComponent = {
   id: "1",
   title: "Core Components",
   content:
@@ -48,7 +52,7 @@ export const CORECOMPOENT: CoreComponent = {
   ],
 };
 
-export const TRACTCOMPONENT: TrackComponent = {
+export const TRACKCOMPONENT: TrackComponent = {
   id: "1",
   title: "Tracks",
   content:
@@ -58,23 +62,33 @@ export const TRACTCOMPONENT: TrackComponent = {
       id: "1",
       title: "KICKSTARTER",
       subtitle: "In-demand coding tracks",
-      path: "FRONT END & BACK END",
-      front: "HTML & CSS \n Javascript \n React JS",
-      back: "Node JS \n Python + Django",
+      path1: "FRONT END & BACK END",
+      coursea: "HTML & CSS",
+      courseb: " Javascript",
+      coursec: "React JS",
+      coursed: "Node JS",
+      coursef: "Python + Django",
     },
     {
       id: "2",
       title: "KICKSTARTER",
       subtitle: "In-demand coding tracks",
-      path: "DESIGN MANAGEMENT \n Digital marketing",
-      front: "Graphic & Brand \n Design \n Product Design \n Technical writing",
-      back: "Data Analytics \n Product Mangement",
+      path1: "DESIGN",
+      path2: "MANAGEMENT",
+      path3: " Digital marketing",
+      coursea: "Graphic Design ",
+      courseb: "Product Design",
+      coursec: " Technical writing",
+      coursed: "Data Analytics ",
+      coursef: " Product Mangement",
+
     },
   ],
 };
 
 export const EVENTCOMPONENT: EventComponent = {
   id: "1",
+  header: "EVENTS",
   title:
     "Learning extends beyond the classroom. We believe in providing a vibrant and enriching learning experience, which is why we offer a range of events to keep you engaged, inspired, and connected with the tech community.",
   content: [
@@ -162,22 +176,22 @@ export const FAQCOMPONENT: FaqComponent = {
     {
       id: "2",
       question:
-        "Techathon is your gateway to a thriving career in tech. With thousands of individuals?",
+        "Techathon is your gateway to a thriving career in tech. With thousands of individuals2?",
     },
     {
       id: "3",
       question:
-        "Techathon is your gateway to a thriving career in tech. With thousands of individuals?",
+        "Techathon is your gateway to a thriving career in tech. With thousands of individuals3?",
     },
     {
       id: "4",
       question:
-        "Techathon is your gateway to a thriving career in tech. With thousands of individuals?",
+        "Techathon is your gateway to a thriving career in tech. With thousands of individuals4?",
     },
     {
       id: "5",
       question:
-        "Techathon is your gateway to a thriving career in tech. With thousands of individuals?",
+        "Techathon is your gateway to a thriving career in tech. With thousands of individuals5?",
     },
   ],
   answers: [
@@ -233,7 +247,7 @@ export const FOOTERCOMPONENT: FooterComponent = {
   ],
   subtitle: "Take the giant leap towards mastering that tech skill",
   description:
-    "Take the first step towards an exciting tech journey. Join our vibrant community of learners, mentors, and tech enthusiasts. Let's explore, learn, and innovate together.",
+    "Take the first step towards an exciting tech journey.  Join our vibrant community of learners, mentors, and tech enthusiasts. Let's explore, learn, and innovate together.",
   footer: "FOOTER",
 };
 
@@ -241,7 +255,7 @@ export const FOOTERCOMPONENT: FooterComponent = {
 
 export const COURSEINTROCOMPONENT: CourseIntroComponent = {
   id: "1",
-  title: "We teach \n in-demand Tracks",
+  title: "We teach in-demand Tracks",
   content:
     "Techathon is your gateway to a thriving career in tech. With thousands of individuals empowered, we take pride in nurturing aspiring talents and transforming them into seasoned practitioners in various tech domains.",
 };
@@ -325,16 +339,16 @@ export const NOCODINGTRACKS: NoCodingTracks = {
 	body: [
 		{
 			id: "1",
-			type: "part1",
+			type: "Part1",
 			svg: "w3.svg.com",
 			title: "Pre-mentorship",
 			main: 'Effective Transitioning',
-			first: "Up to date course outline \n Relevant information",
-			second: "Assignments \n Individual projects"
+			first: "Up to date course outline Relevant information",
+			second: "Assignments Individual projects"
 		},
 		{
 			id: "2",
-			type: "part2",
+			type: "Part2",
 			svg: "w3.svg.com",
 			title: "Mentorship",
 			main: 'Hands-on approach',
@@ -353,7 +367,7 @@ export const NOCODINGTRACKS: NoCodingTracks = {
 			type: "Bonus",
 			svg: "w3.svg.com",	
 			title: "Jobberman",
-			description:"Get soft skill training and get \n certified for FREE"
+			description: `Get soft skill training and get certified for <b>FREE</b>`
 		}
 	],
 	cards: [
@@ -387,7 +401,7 @@ takestep: {
 ////---------------------------ABOUT US-----------------------///
 export const ABOUTUSCOMPONENT: AboutUsComponent = {
   id: '1',
-  title: 'ABOUT US',
+  title: 'about us',
   content: "Techathon  is a mentorship and open source community that provides seamless transition to those who want to transition into tech regardless of their career background with the right resources they need to make their journey smooth , inclusive and fun. We make acquiring tech skills seamless for anyone transitionsing into tech from any career.",
   subtitle: [
     {
@@ -460,14 +474,15 @@ export const KEYPERSONCOMPONENT: KeyPersonComponent = {
       title: 'Community advocates',
       content: "There are persons representing the community out there to help people who want to transition to tech easily and interested in open source navigate their way to Techathon from anywhere in the world."
     },
-  ]
+  ],
+  summary: "Together, these key individuals make up the Techathon team, a dynamic group of passionate individuals dedicated to fostering tech education, collaboration, and innovation. Join us, as we build the future of tech together."
 }
 
 export const EVENTSCOMPONENT: AboutEventComponent = {
   id: "1",
   title: "EVENTS",
   subtitle: "Community Hangout",
-  description: "The techathon community hangout  is for every member of the community to meet physically after the virtual connect and see their friends and teammates physically and enjoy themselves at the end of the every cohort. We have mentors who are proffessionally trained and qualified , ready to guide mentees, help them to  explore where they are in their career, where they want to go and how they will get there. At techathon, we live out our  values everyday to create a culture that is diverse, inclusive and committed to helping mentees thrive. Our mentors spend up to  5-6 hours with mentees in a week to ensure transitioning is smooth and fun, classes are virtual and very interactive for mentees. The community also holds various programs like inter-track competitions, games, career talks, weekly calls etc. to ensure interactiveness in the community."
+  description: "The techathon community hangout  is for every member of the community to meet physically after the virtual connect and see their friends and teammates physically and enjoy themselves at the end of the every cohort."
 }
 
 //---------------------COURSE DETAILS------------------------////
