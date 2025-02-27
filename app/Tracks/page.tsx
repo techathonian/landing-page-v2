@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+
 import {
   EVENTCOMPONENT,
   COURSEINTROCOMPONENT,
@@ -13,6 +15,7 @@ import { motion } from "framer-motion";
 import Button from "@/components/Button";
 import { TrackBtn } from "@/components/TracksSection";
 import Footer from "@/components/Footer";
+import { Content } from "next/font/google";
 
 const Tracks = () => {
   return (
@@ -94,10 +97,12 @@ const Tracks = () => {
                 </div>
                 <div className="track-3 ">
                   {" "}
+                  <Link href={course.link}>
                   <Button
                     className="bg-[#663BC4] text-[18px]/[24px] text-white w-[136px] h-[40px] md:h-[48px] rounded-[4px] pt-[8px] pr-[16px] pb-[8px] pl-[16px] "
                     label="Learn more"
                   />
+                  </Link>
                 </div>
               </div>
             );
@@ -129,10 +134,12 @@ const Tracks = () => {
                 </div>
                 <div className="track-3 ">
                   {" "}
+                  <Link href={course.link}>
                   <Button
                     className="bg-[#663BC4] text-[18px]/[24px] text-white w-[136px] h-[40px] md:h-[48px] rounded-[4px] pt-[8px] pr-[16px] pb-[8px] pl-[16px] "
                     label="Learn more"
                   />
+                  </Link>
                 </div>
               </div>
             );

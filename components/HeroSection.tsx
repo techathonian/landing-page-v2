@@ -59,15 +59,15 @@ const HeroSection = () => {
             animate={{opacity:1, y: 0}}
             transition={{duration: 2.8}}
             className="body  text-[18px] text-center lg:text-start leading-[24px] ">{HEROCONTENT.body}</motion.div>
-            <div className="buttblue">
+            <div className="buttblue flex items-center justify-center">
               <div className="button">
                 <motion.div 
                 whileHover={{scale: 1.2}}
                 whileTap={{scale: 0.9}}
-                 initial={{opacity: 0, x: 30}}
-                 whileInView={{opacity: 1, x: -30}}
+                 initial={{opacity: 0, x: 10}}
+                 whileInView={{opacity: 1, x: 0}}
                  transition={{duration: 4.1}}
-                className="md:w-full w-full flex place-items-center lg:block md:flex md:items-center md:justify-center ">
+                className="md:w-full w-screen flex  items-center justify-center lg:block  ">
                   <Button 
                     label="Get Started"
                     className="text-center w-[290px] md:w-[136px] bg-[#481DA6] text-white font-[200] h-[40px] my-8 rounded-sm"

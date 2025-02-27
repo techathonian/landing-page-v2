@@ -15,7 +15,7 @@ import {
   GuidePrincipleComponent,
   KeyPersonComponent,
   AboutEventComponent,
-  CourseDetailsComponent
+  MainDetailsComponent,
 } from "./types";
 
 export const HEROCONTENT: HeroContent = {
@@ -25,7 +25,7 @@ export const HEROCONTENT: HeroContent = {
   bullet1: "Seasoned mentors",
   bullet2: "New tech developments",
   bullet3: "Carry out realtime projects",
-  bullet4: "Work in functional team"
+  bullet4: "Work in functional team",
 };
 
 export const CORECOMPONENT: CoreComponent = {
@@ -81,7 +81,6 @@ export const TRACKCOMPONENT: TrackComponent = {
       coursec: " Technical writing",
       coursed: "Data Analytics ",
       coursef: " Product Mangement",
-
     },
   ],
 };
@@ -271,396 +270,618 @@ export const CODINGTRACKS: CodingTracks = {
       title: "HTML, CSS & Javascript (Front end)",
       content:
         "Master the essentials of HTML for structuring content, CSS for styling, and JavaScript for interactive web experiences. Learn how to create visually captivating and user-friendly websites, setting the stage for a dynamic career in front-end development.",
+      link: "/courses/html+css+javascript-frontend",
     },
     {
       id: "2",
       title: "Node Js (Back end)",
       content:
         "Master the essentials of Nodejs, for backend and creating a fullstack funtioning application.",
+      link: "/courses/nodejs-backend",
     },
     {
       id: "3",
       title: "Python + Django (Back end)",
       content:
         "Our Python + Django track is your gateway to back-end development excellence. Dive deep into Python, a versatile and powerful programming language, and harness Django, the high-level web framework known for its efficiency and ease of use. Unlock the ability to build secure and scalable web applications with confidence.",
+      link: "/courses/python+django-backend",
     },
     {
       id: "4",
       title: "React Js (Front end)",
       content:
         "Explore our React.js track, the library of choice for building modern, interactive web applications. Learn how to create reusable UI components and master the art of responsive web design. With React.js, you'll be at the forefront of the front-end revolution.",
+      link: "/courses/react-frontend",
     },
   ],
 };
 
 export const NOCODINGTRACKS: NoCodingTracks = {
-	id: "1",
-	title: "Non-coding Tracks",
-	content:
-	  "We understand that the tech industry isn't just about coding. It's a vast landscape filled with diverse opportunities for creative minds and problem solvers. Explore our non-coding tracks, each tailored to help you excel in your chosen field.",
-	courses: [
-	  {
-		id: "1",
-		title: "Brand & graphics design",
-		content:
-		  "Embark on a journey into the world of visual communication with our Brand and Graphics Design track. Develop the skills needed to create compelling brand identities, eye-catching graphics, and immersive user experiences. Your creative vision will shape the way people perceive and engage with brands.",
-	  },
-	  {
-		id: "2",
-		title: "Data analysis",
-		content:
-		  "Become a data-driven decision-maker with our Data Analysis track. Dive deep into the world of data, learning how to gather, analyze, and interpret information to uncover valuable insights. Data analysts are in high demand across industries, and this track equips you with the tools to make an impact."	  },
-	  {
-		id: "3",
-		title: "Digital marketing and content creation ",
-		content:
-		  "Explore the art and science of digital marketing and content creation. In this track, you'll master the strategies and techniques needed to reach and engage online audiences. From SEO to social media marketing, content creation to analytics, you'll gain the skills to excel in the digital landscape.",
-	  },
-	  {
-		id: "4",
-		title: "Product design",
-		content:
-		  "Join our Product Design track to discover the art of creating user-centric digital products. Gain expertise in user research, prototyping, and design thinking. Shape the future by transforming innovative ideas into intuitive, impactful products.",
-	  },
+  id: "1",
+  title: "Non-coding Tracks",
+  content:
+    "We understand that the tech industry isn't just about coding. It's a vast landscape filled with diverse opportunities for creative minds and problem solvers. Explore our non-coding tracks, each tailored to help you excel in your chosen field.",
+  courses: [
+    {
+      id: "1",
+      title: "Brand & graphics design",
+      content:
+        "Embark on a journey into the world of visual communication with our Brand and Graphics Design track. Develop the skills needed to create compelling brand identities, eye-catching graphics, and immersive user experiences. Your creative vision will shape the way people perceive and engage with brands.",
+      link: "/courses/brand&graphic-design",
+    },
+    {
+      id: "2",
+      title: "Data analysis",
+      content:
+        "Become a data-driven decision-maker with our Data Analysis track. Dive deep into the world of data, learning how to gather, analyze, and interpret information to uncover valuable insights. Data analysts are in high demand across industries, and this track equips you with the tools to make an impact.",
+      link: "/courses/data-analysis",
+    },
+    {
+      id: "3",
+      title: "Digital marketing and content creation ",
+      content:
+        "Explore the art and science of digital marketing and content creation. In this track, you'll master the strategies and techniques needed to reach and engage online audiences. From SEO to social media marketing, content creation to analytics, you'll gain the skills to excel in the digital landscape.",
+      link: "/courses/digital+marketing&content+creation",
+    },
+    {
+      id: "4",
+      title: "Product design",
+      content:
+        "Join our Product Design track to discover the art of creating user-centric digital products. Gain expertise in user research, prototyping, and design thinking. Shape the future by transforming innovative ideas into intuitive, impactful products.",
+      link: "/courses/product-design",
+    },
 
-	  {
-		id: "4",
-		title: "Project management",
-		content:
-		  "In the world of tech, effective project management is key. Our Project Management track equips you with the knowledge and tools to lead teams, execute projects efficiently, and deliver results. Learn the best practices that ensure projects are on time, on budget, and on target.",
-	  },
-	],
-  };
+    {
+      id: "4",
+      title: "Project management",
+      content:
+        "In the world of tech, effective project management is key. Our Project Management track equips you with the knowledge and tools to lead teams, execute projects efficiently, and deliver results. Learn the best practices that ensure projects are on time, on budget, and on target.",
+      link: "/courses/project-management",
+    },
+  ],
+};
 
-  export const PROGRAMMESCOMPONENT: ProgrammesComponent = {
-	id: '1',
-	title: "Programmes",
-	subtitle: "At Techathon, we offer distinctive programs designed to kickstart your journey into the dynamic world of tech and provide you with the mentorship needed to thrive.",
-	body: [
-		{
-			id: "1",
-			type: "Part1",
-			svg: "w3.svg.com",
-			title: "Pre-mentorship",
-			main: 'Effective Transitioning',
-			first: "Up to date course outline Relevant information",
-			second: "Assignments Individual projects"
-		},
-		{
-			id: "2",
-			type: "Part2",
-			svg: "w3.svg.com",
-			title: "Mentorship",
-			main: 'Hands-on approach',
-			first: "Cross functional team \n Practical classes ",
-			second: "Real time projects \n Exhibition & Start ups"
-		},
-		{
-			id: "3",
-			type: "Bonus",
-			svg: "w3.svg.com",	
-			title: "Techathon",
-			description:"Get tech skill training and get certified for <b>3000</b>"
-		},
-		{
-			id: "4",
-			type: "Bonus",
-			svg: "w3.svg.com",	
-			title: "Jobberman",
-			description: `Get soft skill training and get certified for <b>FREE</b>`
-		}
-	],
-	cards: [
-		{
-		id: "1",
-		image: "htpps://techathon/pictures.com",
-		title: "Learn for FREE",
-		description: "Learn your desired tech skill seamlessly in 5weeks for <b>FREE<b>"
-	},
-	{
-		id: "2",
-		image: "htpps://techathon/pictures.com",
-		title: "Bootcamp",
-		description: "Work in a cross functional team and develope real time projects  and exhibition (6weeks) all at <b>N10,000<b>"
-	},
-	{
-		id: "3",
-		image: "htpps://techathon/pictures.com",
-		title: "Certification",
-		description: "Get duly certified  at the cost of <b>N3,500<b>"
-	},
-],
+export const PROGRAMMESCOMPONENT: ProgrammesComponent = {
+  id: "1",
+  title: "Programmes",
+  subtitle:
+    "At Techathon, we offer distinctive programs designed to kickstart your journey into the dynamic world of tech and provide you with the mentorship needed to thrive.",
+  body: [
+    {
+      id: "1",
+      type: "Part1",
+      svg: "w3.svg.com",
+      title: "Pre-mentorship",
+      main: "Effective Transitioning",
+      first: "Up to date course outline Relevant information",
+      second: "Assignments Individual projects",
+    },
+    {
+      id: "2",
+      type: "Part2",
+      svg: "w3.svg.com",
+      title: "Mentorship",
+      main: "Hands-on approach",
+      first: "Cross functional team \n Practical classes ",
+      second: "Real time projects \n Exhibition & Start ups",
+    },
+    {
+      id: "3",
+      type: "Bonus",
+      svg: "w3.svg.com",
+      title: "Techathon",
+      description: "Get tech skill training and get certified for <b>3000</b>",
+    },
+    {
+      id: "4",
+      type: "Bonus",
+      svg: "w3.svg.com",
+      title: "Jobberman",
+      description: `Get soft skill training and get certified for <b>FREE</b>`,
+    },
+  ],
+  cards: [
+    {
+      id: "1",
+      image: "htpps://techathon/pictures.com",
+      title: "Learn for FREE",
+      description:
+        "Learn your desired tech skill seamlessly in 5weeks for <b>FREE<b>",
+    },
+    {
+      id: "2",
+      image: "htpps://techathon/pictures.com",
+      title: "Bootcamp",
+      description:
+        "Work in a cross functional team and develope real time projects  and exhibition (6weeks) all at <b>N10,000<b>",
+    },
+    {
+      id: "3",
+      image: "htpps://techathon/pictures.com",
+      title: "Certification",
+      description: "Get duly certified  at the cost of <b>N3,500<b>",
+    },
+  ],
 
-takestep: {
-	id: "4",
-  title: 'Take the giant leap towards mastering that tech skill',
-  content: "Take the first step towards an exciting tech journey. Join our vibrant community of learners, mentors, and tech enthusiasts. Let's explore, learn, and innovate together."
-},
-  }
+  takestep: {
+    id: "4",
+    title: "Take the giant leap towards mastering that tech skill",
+    content:
+      "Take the first step towards an exciting tech journey. Join our vibrant community of learners, mentors, and tech enthusiasts. Let's explore, learn, and innovate together.",
+  },
+};
 
 ////---------------------------ABOUT US-----------------------///
 export const ABOUTUSCOMPONENT: AboutUsComponent = {
-  id: '1',
-  title: 'about us',
-  content: "Techathon  is a mentorship and open source community that provides seamless transition to those who want to transition into tech regardless of their career background with the right resources they need to make their journey smooth , inclusive and fun. We make acquiring tech skills seamless for anyone transitionsing into tech from any career.",
+  id: "1",
+  title: "about us",
+  content:
+    "Techathon  is a mentorship and open source community that provides seamless transition to those who want to transition into tech regardless of their career background with the right resources they need to make their journey smooth , inclusive and fun. We make acquiring tech skills seamless for anyone transitionsing into tech from any career.",
   subtitle: [
     {
-      id: '1',
-      title: 'Our Mission',
-      content: "To provide seamless transition to anyone who wants to transition into tech, regardless of their career background through our mentorship  program until they become job ready."      
+      id: "1",
+      title: "Our Mission",
+      content:
+        "To provide seamless transition to anyone who wants to transition into tech, regardless of their career background through our mentorship  program until they become job ready.",
     },
     {
-      id: '2',
-      title: 'Our Vission',
-      content: "To become the number beginner friendly virtual mentorshhip and collaborative hub for anyone looking to transition to tech from any career.."      
-    }
-  ]
-}
-//CORECOMPONENT
-export const GUIDEPRINCIPLECOMPONENT: GuidePrincipleComponent = {
-  id: '1',
-  title: "Guiding principles",
-  principles:[
-    {
-      id: '1',
-      title: 'Mentees first',
-      content: "Always focus on the mentees to make sure they have a good learning experience throughout the mentorship period."
-    },
-    {
-      id: '2',
-      title: 'Inclusive  and welcoming environment',
-      content: "A healthy community where everyone’s opinion is respected."
-    },
-    {
-      id: '3',
-      title: 'Teamwork and collaboration',
-      content: "The collaborative efforts of each mentee to achieve a common goal to learn  how tech works in real life."
-    },
-    {
-      id: '4',
-      title: 'Communication',
-      content: "In techathon, this is a tool mentees and mentors use to clearly converse, set expectations and collaborate on projects."
-    },
-    {
-      id: '5',
-      title: 'Time magement',
-      content: "This includes prioritising tasks, meeting deadlines and effective goal setting"
-    },
-  ]
-}
-
-export const KEYPERSONCOMPONENT: KeyPersonComponent = {
-  id: '1',
-  title: "Key persons at techathon",
-  description: "Our vibrant community thrives thanks to the dedication and passion of our key individuals who form the backbone of our ecosystem.",
-  persons: [
-    {
-      id: '1',
-      title: 'Mentees',
-      content: "At techathon, we have the right structure and environment to ensure those who are transitioning into tech have a smooth transitioning process by guiding them with the right resources inclusively."
-    },
-    {
-      id: '2',
-      title: 'Mentors',
-      content: "We have mentors who are professionally trained and qualified , ready to guide mentees, help them to  explore where they are in their career, where they want to go and how they will get there. At techathon, we live out our  values everyday to create a culture that is diverse, inclusive and committed to helping mentees thrive. Our mentors spend up to  5-6 hours with mentees in a week to ensure transitioning is smooth and fun, classes are virtual and very interactive for mentees. The community also holds various programs like inter-track competitions, games, career talks, weekly calls etc. to ensure interactiveness in the community."
-    },
-    {
-      id: '3',
-      title: 'Campus ambassadors',
-      content: "Techathon has representatives on each campus in every school representing Techathon, preaching what we do at Techathon in their various schools."
-    },
-    {
-      id: '4',
-      title: 'Community advocates',
-      content: "There are persons representing the community out there to help people who want to transition to tech easily and interested in open source navigate their way to Techathon from anywhere in the world."
+      id: "2",
+      title: "Our Vission",
+      content:
+        "To become the number beginner friendly virtual mentorshhip and collaborative hub for anyone looking to transition to tech from any career..",
     },
   ],
-  summary: "Together, these key individuals make up the Techathon team, a dynamic group of passionate individuals dedicated to fostering tech education, collaboration, and innovation. Join us, as we build the future of tech together."
-}
+};
+//CORECOMPONENT
+export const GUIDEPRINCIPLECOMPONENT: GuidePrincipleComponent = {
+  id: "1",
+  title: "Guiding principles",
+  principles: [
+    {
+      id: "1",
+      title: "Mentees first",
+      content:
+        "Always focus on the mentees to make sure they have a good learning experience throughout the mentorship period.",
+    },
+    {
+      id: "2",
+      title: "Inclusive  and welcoming environment",
+      content: "A healthy community where everyone’s opinion is respected.",
+    },
+    {
+      id: "3",
+      title: "Teamwork and collaboration",
+      content:
+        "The collaborative efforts of each mentee to achieve a common goal to learn  how tech works in real life.",
+    },
+    {
+      id: "4",
+      title: "Communication",
+      content:
+        "In techathon, this is a tool mentees and mentors use to clearly converse, set expectations and collaborate on projects.",
+    },
+    {
+      id: "5",
+      title: "Time magement",
+      content:
+        "This includes prioritising tasks, meeting deadlines and effective goal setting",
+    },
+  ],
+};
+
+export const KEYPERSONCOMPONENT: KeyPersonComponent = {
+  id: "1",
+  title: "Key persons at techathon",
+  description:
+    "Our vibrant community thrives thanks to the dedication and passion of our key individuals who form the backbone of our ecosystem.",
+  persons: [
+    {
+      id: "1",
+      title: "Mentees",
+      content:
+        "At techathon, we have the right structure and environment to ensure those who are transitioning into tech have a smooth transitioning process by guiding them with the right resources inclusively.",
+    },
+    {
+      id: "2",
+      title: "Mentors",
+      content:
+        "We have mentors who are professionally trained and qualified , ready to guide mentees, help them to  explore where they are in their career, where they want to go and how they will get there. At techathon, we live out our  values everyday to create a culture that is diverse, inclusive and committed to helping mentees thrive. Our mentors spend up to  5-6 hours with mentees in a week to ensure transitioning is smooth and fun, classes are virtual and very interactive for mentees. The community also holds various programs like inter-track competitions, games, career talks, weekly calls etc. to ensure interactiveness in the community.",
+    },
+    {
+      id: "3",
+      title: "Campus ambassadors",
+      content:
+        "Techathon has representatives on each campus in every school representing Techathon, preaching what we do at Techathon in their various schools.",
+    },
+    {
+      id: "4",
+      title: "Community advocates",
+      content:
+        "There are persons representing the community out there to help people who want to transition to tech easily and interested in open source navigate their way to Techathon from anywhere in the world.",
+    },
+  ],
+  summary:
+    "Together, these key individuals make up the Techathon team, a dynamic group of passionate individuals dedicated to fostering tech education, collaboration, and innovation. Join us, as we build the future of tech together.",
+};
 
 export const EVENTSCOMPONENT: AboutEventComponent = {
   id: "1",
   title: "EVENTS",
   subtitle: "Community Hangout",
-  description: "The techathon community hangout  is for every member of the community to meet physically after the virtual connect and see their friends and teammates physically and enjoy themselves at the end of the every cohort."
-}
+  description:
+    "The techathon community hangout  is for every member of the community to meet physically after the virtual connect and see their friends and teammates physically and enjoy themselves at the end of the every cohort.",
+};
 
 //---------------------COURSE DETAILS------------------------////
-export const COURSEDETAILSCOMPONENT: CourseDetailsComponent ={
-  id: "1",
-  summary: {
-    id: '1',
-    title: 'Digital Marketing & Content Creation',
-    description: "Learn Html, Css and Java Script, the building blocks of Front end Development to help you build pages and web applications that are responsive and user-friendly.",
-    highlight: [
-      {
-        id: "1",
-        svg: "https://www.markicon.com",
-        theme: "Beginner-friendly "
-      },
-      {
-        id: "2",
-        svg: "https://www.markicon.com",
-        theme: "100% online classes "
-      },
-      {
-        id: "3",
-        svg: "https://www.markicon.com",
-        theme: "5 - 6 hours every week"
-      },
-      {
-        id: "4",
-        svg: "https://www.markicon.com",
-        theme: "Up to 10 weeks learning"
-      },
-    ],
-  },
-  image: "https://description/image",
-  about:{
-    id: '1',
-    title: "About this Course",
-    body: "HTML, CSS and JavaScript are the main topics of this frontend development course. You will be able to understand the foundational technologies that establish the visual and interactive components of webpage in this course. Your design skills will advance as you learn how to organize headings, paragraphs, lists, photos, and more using HTML (Hyper-text Markup Language),which is the building blocks of web pages. The art of styling web pages, including managing colors, fonts, layouts, and responsive designs, can be explored with CSS. Beginning with the fundamentals of variables, data types, and control structures, you will learn Java Script"
-  },
-  course: {
-    id: "1",
-    title: "Course Content",
-    details: [
-      {
-        id: "1",
-        svg: "w3.svg.com",
-        title: "Introduction to Digital Marketing",
-        body: ["Understanding the basics of web development.",
-          "Setting up your development environment.",
-          "Introduction to HTML, CSS, and JavaScript."
-        ]
-      },
-      {
-        id: "2",
-        svg: "w3.svg.com",
-        title: "Social Media Marketing",
-        body: ["Understanding the basics of web development.",
-          "Setting up your development environment.",
-          "Introduction to HTML, CSS, and JavaScript."
-        ]
-      },
-      {
-        id: "3",
-        svg: "w3.svg.com",
-        title: "Website and Content Strategy",
-        body: ["Introduction to CSS.",
-          "Selectors and properties.",
-          "Box Model and layouts."
-        ]
-      },
-      {
-        id: "4",
-        svg: "w3.svg.com",
-        title: "Search Engine Optimization",
-        body: ["Positioning and display properties",
-          "Flexbox layout",
-          "CSS Grid layout"
-        ]
-      },
-      {
-        id: "5",
-        svg: "w3.svg.com",
-        title: "JavaScript Basics",
-        body: ["Introduction to CSS.",
-          "Selectors and properties.",
-          "Box Model and layouts."
-        ]
-      },
-      {
-        id: "6",
-        svg: "w3.svg.com",
-        title: "DOM Maninupulation",
-        body: ["Introduction to CSS.",
-          "Selectors and properties.",
-          "Box Model and layouts."
-        ]
-      },
-      {
-        id: "7",
-        svg: "w3.svg.com",
-        title: "Advanced JavaScript",
-        body: ["Arrays and objects",
-          "ES6 features.",
-          "Box Model and layouts."
-        ]
-      },
-      {
-        id: "8",
-        svg: "w3.svg.com",
-        title: "Assignment & Projects",
-        body: ["Arrays and objects",
-          "ES6 features.",
-          "Box Model and layouts."
-        ]
-      },
-    ]
-  },
-  certification: {
-    id: '1',
-    title: "Certification and Mentorship",
-    description: "You earn certification at the completion of the 8 weeks learning in your chosen track. Earning a certification at the of your learning track is paid and compulsory."
-  },
-  body: [
-		{
-			id: "1",
-			type: "part1",
-			svg: "w3.svg.com",
-			title: "Pre-mentorship",
-			main: 'Effective Transitioning',
-			first: "Up to date course outline \n Relevant information",
-			second: "Assignments \n Individual projects"
-		},
-		{
-			id: "2",
-			type: "part2",
-			svg: "w3.svg.com",
-			title: "Mentorship",
-			main: 'Hands-on approach',
-			first: "Cross functional team \n Practical classes ",
-			second: "Real time projects \n Exhibition & Start ups"
-		},
-		{
-			id: "3",
-			type: "Bonus",
-			svg: "w3.svg.com",	
-			title: "Techathon",
-			description:"Get tech skill training and get \n certified for 3000"
-		},
-		{
-			id: "4",
-			type: "Bonus",
-			svg: "w3.svg.com",	
-			title: "Jobberman",
-			description:"Get soft skill training and get \n certified for FREE"
-		}
-	],
-  cards: [
-		{
-		id: "1",
-		image: "htpps://techathon/pictures.com",
-		title: "Learn for FREE",
-		description: "Learn your desired tech skill seamlessly in 5weeks for FREE"
-	},
-	{
-		id: "2",
-		image: "htpps://techathon/pictures.com",
-		title: "Bootcamp",
-		description: "Work in a cross functional team and develope real time projects  and exhibition (6weeks) all at N10,000"
-	},
-	{
-		id: "3",
-		image: "htpps://techathon/pictures.com",
-		title: "Certification",
-		description: "Get duly certified  at the cost of N3,500"
-	},
-],
-  }
-  //FOOTER 
+// export const COURSEDETAILSCOMPONENT: CourseDetailsComponent = {
+//   id: "1",
+//   path: [
+//     {
+//       id:   1,
+//       summary: {
+//       id: '1',
+//       title: 'Digital Marketing & Content Creation',
+//       description: "Learn Html, Css and Java Script, the building blocks of Front end Development to help you build pages and web applications that are responsive and user-friendly.",
+//       highlight: [
+//         {
+//           id: "1",
+//           svg: "https://www.markicon.com",
+//           theme: "Beginner-friendly "
+//         },
+//         {
+//           id: "2",
+//           svg: "https://www.markicon.com",
+//           theme: "100% online classes "
+//         },
+//         {
+//           id: "3",
+//           svg: "https://www.markicon.com",
+//           theme: "5 - 6 hours every week"
+//         },
+//         {
+//           id: "4",
+//           svg: "https://www.markicon.com",
+//           theme: "Up to 10 weeks learning"
+//         },
+//       ],
+//     },
+//     image: "https://description/image",
+//     about:{
+//       id: '1',
+//       title: "About this Course",
+//       body: "HTML, CSS and JavaScript are the main topics of this frontend development course. You will be able to understand the foundational technologies that establish the visual and interactive components of webpage in this course. Your design skills will advance as you learn how to organize headings, paragraphs, lists, photos, and more using HTML (Hyper-text Markup Language),which is the building blocks of web pages. The art of styling web pages, including managing colors, fonts, layouts, and responsive designs, can be explored with CSS. Beginning with the fundamentals of variables, data types, and control structures, you will learn Java Script"
+//     },
+//     course: {
+//       id: "1",
+//       title: "Course Content",
+//       details: [
+//         {
+//           id: "1",
+//           svg: "w3.svg.com",
+//           title: "Introduction to Digital Marketing",
+//           body: ["Understanding the basics of web development.",
+//             "Setting up your development environment.",
+//             "Introduction to HTML, CSS, and JavaScript."
+//           ]
+//         },
+//         {
+//           id: "2",
+//           svg: "w3.svg.com",
+//           title: "Social Media Marketing",
+//           body: ["Understanding the basics of web development.",
+//             "Setting up your development environment.",
+//             "Introduction to HTML, CSS, and JavaScript."
+//           ]
+//         },
+//         {
+//           id: "3",
+//           svg: "w3.svg.com",
+//           title: "Website and Content Strategy",
+//           body: ["Introduction to CSS.",
+//             "Selectors and properties.",
+//             "Box Model and layouts."
+//           ]
+//         },
+//         {
+//           id: "4",
+//           svg: "w3.svg.com",
+//           title: "Search Engine Optimization",
+//           body: ["Positioning and display properties",
+//             "Flexbox layout",
+//             "CSS Grid layout"
+//           ]
+//         },
+//         {
+//           id: "5",
+//           svg: "w3.svg.com",
+//           title: "JavaScript Basics",
+//           body: ["Introduction to CSS.",
+//             "Selectors and properties.",
+//             "Box Model and layouts."
+//           ]
+//         },
+//         {
+//           id: "6",
+//           svg: "w3.svg.com",
+//           title: "DOM Maninupulation",
+//           body: ["Introduction to CSS.",
+//             "Selectors and properties.",
+//             "Box Model and layouts."
+//           ]
+//         },
+//         {
+//           id: "7",
+//           svg: "w3.svg.com",
+//           title: "Advanced JavaScript",
+//           body: ["Arrays and objects",
+//             "ES6 features.",
+//             "Box Model and layouts."
+//           ]
+//         },
+//         {
+//           id: "8",
+//           svg: "w3.svg.com",
+//           title: "Assignment & Projects",
+//           body: ["Arrays and objects",
+//             "ES6 features.",
+//             "Box Model and layouts."
+//           ]
+//         },
+//       ]
+//     },}
+//   ],
+//   certification: {
+//     id: '1',
+//     title: "Certification and Mentorship",
+//     description: "You earn certification at the completion of the 8 weeks learning in your chosen track. Earning a certification at the of your learning track is paid and compulsory."
+//   },
 
-  // export const FOOTERCOMPONENT{
+//   body: [
+// 		{
+// 			id: "1",
+// 			type: "part1",
+// 			svg: "w3.svg.com",
+// 			title: "Pre-mentorship",
+// 			main: 'Effective Transitioning',
+// 			first: "Up to date course outline \n Relevant information",
+// 			second: "Assignments \n Individual projects"
+// 		},
+// 		{
+// 			id: "2",
+// 			type: "part2",
+// 			svg: "w3.svg.com",
+// 			title: "Mentorship",
+// 			main: 'Hands-on approach',
+// 			first: "Cross functional team \n Practical classes ",
+// 			second: "Real time projects \n Exhibition & Start ups"
+// 		},
+// 		{
+// 			id: "3",
+// 			type: "Bonus",
+// 			svg: "w3.svg.com",
+// 			title: "Techathon",
+// 			description:"Get tech skill training and get \n certified for 3000"
+// 		},
+// 		{
+// 			id: "4",
+// 			type: "Bonus",
+// 			svg: "w3.svg.com",
+// 			title: "Jobberman",
+// 			description:"Get soft skill training and get \n certified for FREE"
+// 		}
+// 	],
+//   cards: [
+// 		{
+// 		id: "1",
+// 		image: "htpps://techathon/pictures.com",
+// 		title: "Learn for FREE",
+// 		description: "Learn your desired tech skill seamlessly in 5weeks for FREE"
+// 	},
+// 	{
+// 		id: "2",
+// 		image: "htpps://techathon/pictures.com",
+// 		title: "Bootcamp",
+// 		description: "Work in a cross functional team and develope real time projects  and exhibition (6weeks) all at N10,000"
+// 	},
+// 	{
+// 		id: "3",
+// 		image: "htpps://techathon/pictures.com",
+// 		title: "Certification",
+// 		description: "Get duly certified  at the cost of N3,500"
+// 	},
+// ],
+//   }
 
-  // }
+export const COURSEDETAILSCOMPONENT: MainDetailsComponent = {
+  CourseDetail: [
+    {
+      id: "digital+marketing&content+creation",
+      heading: "non coding courses",
+      summary: {
+        id: "1",
+        title: "Digital Marketing & Content Creation",
+        description:
+          "Learn Html, Css and Java Script, the building blocks of Front end Development to help you build pages and web applications that are responsive and user-friendly.",
+        highlight: [
+          {
+            id: "1",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#481DA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#481DA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`,
+            theme: "Beginner-friendly ",
+          },
+          {
+            id: "2",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#481DA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#481DA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            theme: "100% online classes ",
+          },
+          {
+            id: "3",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="#481DA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.7099 15.1798L12.6099 13.3298C12.0699 13.0098 11.6299 12.2398 11.6299 11.6098V7.50977" stroke="#481DA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            theme: "5 - 6 hours every week",
+          },
+          {
+            id: "4",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 2V5" stroke="#481DA6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 2V5" stroke="#481DA6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.5 9.08984H20.5" stroke="#481DA6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="#481DA6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.6947 13.7002H15.7037" stroke="#481DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.6947 16.7002H15.7037" stroke="#481DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.9955 13.7002H12.0045" stroke="#481DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.9955 16.7002H12.0045" stroke="#481DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.29431 13.7002H8.30329" stroke="#481DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.29431 16.7002H8.30329" stroke="#481DA6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            theme: "Up to 10 weeks learning",
+          },
+        ],
+      },
+      img: "www.blablalala",
+      about: {
+        id: "1",
+        title: "About this Course",
+        body: "HTML, CSS and JavaScript are the main topics of this frontend development course. You will be able to understand the foundational technologies that establish the visual and interactive components of webpage in this course. Your design skills will advance as you learn how to organize headings, paragraphs, lists, photos, and more using HTML (Hyper-text Markup Language),which is the building blocks of web pages. The art of styling web pages, including managing colors, fonts, layouts, and responsive designs, can be explored with CSS. Beginning with the fundamentals of variables, data types, and control structures, you will learn Java Script",
+      },
+      courseContent: {
+        id: "1",
+        title: "Course Content",
+        details: [
+          {
+            id: "1",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            title: "Introduction to Digital Marketing",
+            body: [
+              "Understanding the basics of web development.",
+              "Setting up your development environment.",
+              "Introduction to HTML, CSS, and JavaScript.",
+            ],
+          },
+          {
+            id: "2",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            title: "Social Media Marketing",
+            body: [
+              "Understanding the basics of web development.",
+              "Setting up your development environment.",
+              "Introduction to HTML, CSS, and JavaScript.",
+            ],
+          },
+          {
+            id: "3",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            title: "Website and Content Strategy",
+            body: [
+              "Introduction to CSS.",
+              "Selectors and properties.",
+              "Box Model and layouts.",
+            ],
+          },
+          {
+            id: "4",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            title: "Search Engine Optimization",
+            body: [
+              "Positioning and display properties",
+              "Flexbox layout",
+              "CSS Grid layout",
+            ],
+          },
+          {
+            id: "5",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            title: "JavaScript Basics",
+            body: [
+              "Introduction to CSS.",
+              "Selectors and properties.",
+              "Box Model and layouts.",
+            ],
+          },
+          {
+            id: "6",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            title: "DOM Maninupulation",
+            body: [
+              "Introduction to CSS.",
+              "Selectors and properties.",
+              "Box Model and layouts.",
+            ],
+          },
+          {
+            id: "7",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            title: "Advanced JavaScript",
+            body: [
+              "Arrays and objects",
+              "ES6 features.",
+              "Box Model and layouts.",
+            ],
+          },
+          {
+            id: "8",
+            svg: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.75 11.9999L10.58 14.8299L16.25 9.16992" stroke="#663BC4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+`,
+            title: "Assignment & Projects",
+            body: [
+              "Arrays and objects",
+              "ES6 features.",
+              "Box Model and layouts.",
+            ],
+          },
+        ],
+      },
+    },
+    // {
+    //   id: "html+css+javascript-frontend",
+    //   summary:{}
+    // }
+  ],
+};
+
+//FOOTER
+
+// export const FOOTERCOMPONENT{
+
+// }

@@ -7,7 +7,7 @@ import { easeOut, motion, useInView } from "framer-motion";
 import React, { useRef } from "react"
 
 const gridContainerVariants = {
-  hidden: { opacity: 0, x: -40 },
+  hidden: { opacity: 0, x: -10 },
   show: {
     opacity: 1,
     x: 0,

@@ -60,9 +60,9 @@ const TracksSection = () => {
         <div className="two flex flex-col gap-5 lg:flex-row items-center justify-center">
         {/* ///// */}
       <motion.div 
-        initial={{opacity: 0, x: -150}}
+        initial={{opacity: 0, x: -10}}
           animate={
-            isInView ? {opacity: 1, x: 0}: {opacity: 0, x:-150}}
+            isInView ? {opacity: 1, x: 0}: {opacity: 0, x:-10}}
           transition={{duration: 8.5}}  className="rounded-[24px] sub-1  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#E6EBFF] md:h-[612px] md:w-[584px] md:bg-[#E6EBFF] bg-[#ECF3FB]">
             <div className="header ml-5  flex flex-col gap-4">
               <div className="flex gap-3 items-center pt-3">
@@ -116,8 +116,8 @@ const TracksSection = () => {
           </motion.div>
           {/**ghjfh */}
           <motion.div 
-        initial={{opacity: 0, x: 150}}
-          animate={ isInView ? {opacity: 1, x: 0} : {opacity: 0, x: 150}}
+        initial={{opacity: 0, x: 10}}
+          animate={ isInView ? {opacity: 1, x: 0} : {opacity: 0, x: 10}}
           transition={{duration: 8.5}}  className="sub-2 rounded-[24px]  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#FCD1FF] md:h-[612px] md:w-[584px] bg-[#F0E1DC]">
             <div className="header ml-5 flex flex-col gap-4">
               <div className="flex gap-3 items-center ">

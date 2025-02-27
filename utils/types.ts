@@ -124,6 +124,7 @@ interface  Courses{
 	id: string;
 	title: string;
 	content: string;
+	link: string;
 }
 export interface CodingTracks{
 	id: string;
@@ -214,40 +215,80 @@ export interface AboutEventComponent{
 
 
 //---------------------COURSE DETAILS------------------------////
-interface Common{
+// interface Common{
+// 	id: string;
+// 	title?: string; 
+// 	svg?: string;
+// }
+// interface  Highlight extends Common{
+// 	theme: string;
+// }
+// interface Summary extends Common{
+// 	description: string;
+// 	highlight:  Highlight[];
+// }
+// interface About extends Common{
+// 	body: string;
+// }
+// interface Details extends Common{
+// 	body: string[]
+// }
+// interface Course extends Common {
+// 	details: Details[]
+// }
+// interface  Certification extends Common{
+// 	description: string;
+// }
+// interface Path {
+// 	id: string;
+// 	summary: Summary;
+// 	image: string;
+// 	about: About;
+// 	course: Course;
+// }
+// export interface CourseDetailsComponent {
+// 	id: string;
+// 	path: Path[]
+// 	certification:  Certification
+// 	body: Body[]
+// 	cards: Card[]
+// }
+
+
+interface Samething{
 	id: string;
-	title?: string; 
+	title?: string;
+  }
+  interface Highlight extends Samething{
 	svg?: string;
-}
-interface  Highlight extends Common{
-	theme: string;
-}
-interface Summary extends Common{
-	description: string;
-	highlight:  Highlight[];
-}
-interface About extends Common{
-	body: string;
-}
-interface Details extends Common{
+	theme?: string;
+  }
+  interface Summary extends Samething{
+	  description: string;
+	  highlight: Highlight[]
+  }
+  interface About extends Samething{
+	  body: string;
+  }
+  interface Detailz  extends Samething{
+	svg: string;
 	body: string[]
-}
-interface Course extends Common {
-	details: Details[]
-}
-interface  Certification extends Common{
-	description: string;
-}
-export interface CourseDetailsComponent {
+  }
+  interface CourseContent extends Samething{
+	details: Detailz[]
+  }
+  interface CourseDetails{
 	id: string;
+	heading: string;
 	summary: Summary;
-	image: string;
+	img: string;
 	about: About;
-	course: Course;
-	certification:  Certification
-	body: Body[]
-	cards: Card[]
-}
+	courseContent: CourseContent;
+  }
+  
+  export interface MainDetailsComponent{
+	CourseDetail: CourseDetails[]
+  }
 /******COMPOENTS */
 
 // Button

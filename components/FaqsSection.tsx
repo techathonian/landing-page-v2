@@ -15,13 +15,13 @@ const FaqsSection = () => {
   };
 
   return (
-    <motion.div 
-    initial={{opacity: 0, scale: 0}}
-    whileInView={{opacity: 1, scale: 1}}
-    transition={{duration: 2}}
+    <div 
+    
       className="flex place-items-center">
       <div className="flex flex-col gap-6 my-4">
-      <div className="header text-center text-[24px]/[32px] font-[600] md:text-[40px]/[48px]">{FAQCOMPONENT.title}</div>
+      <motion.div initial={{opacity: 0, scale: 0}}
+    whileInView={{opacity: 1, scale: 1}}
+    transition={{duration: 2}} className="header text-center text-[24px]/[32px] font-[600] md:text-[40px]/[48px]">{FAQCOMPONENT.title}</motion.div>
 
       <div className="faqs-ans flex flex-col lg:items-center  w-[340px] h-[472px] md:w-[712px] md:h-[384px] lg:w-[1200px] lg:h-[320px] divide-y divide-gray-400 ">
         {FAQCOMPONENT.questions.map((question, index: number) => {
@@ -39,7 +39,7 @@ const FaqsSection = () => {
         })}
       </div>
     </div>
-    </motion.div>
+    </div>
   );
 };
 
