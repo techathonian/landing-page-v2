@@ -878,6 +878,12 @@ export const COURSEDETAILSCOMPONENT: MainDetailsComponent = {
     //   summary:{}
     // }
   ],
+
+  certification: {
+       id: '1',
+         title: "Certification and Mentorship",
+         description: "You earn certification at the completion of the 8 weeks learning in your chosen track. Earning a certification at the of your learning track is paid and compulsory."
+       },
 };
 
 //FOOTER

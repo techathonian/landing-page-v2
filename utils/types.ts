@@ -277,6 +277,9 @@ interface Samething{
   interface CourseContent extends Samething{
 	details: Detailz[]
   }
+  interface Certification extends Samething{
+	description: string;
+  }
   interface CourseDetails{
 	id: string;
 	heading: string;
@@ -284,10 +287,11 @@ interface Samething{
 	img: string;
 	about: About;
 	courseContent: CourseContent;
-  }
-  
-  export interface MainDetailsComponent{
+}
+
+export interface MainDetailsComponent{
 	CourseDetail: CourseDetails[]
+	certification: Certification;
   }
 /******COMPOENTS */
 

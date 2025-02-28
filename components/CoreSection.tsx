@@ -39,7 +39,7 @@ const CoreSection = () => {
       </div>
       <div className="maiT flex flex-col flex-nowrap items-center justify-center bg-[#1B0028] h-[778px] w-[340px] md:h-[830px] md:w-[712px] lg:w-[1200px] lg:h-[586px] rounded-xl">
        
-        <div className="">
+        <div className="overflow-x-hidden">
           <div className=" flex flex-col justify-center items-center lg:flex-row mainbg w-[308px] h-[601.5px] gap-[40px] md:w-[648px] md:h-[602px] md:gap-[48px]  lg:gap-[80px] lg:w-[1072px] lg:h-[402px] ">
           <SwiperCore />
           </div>

@@ -1,8 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 
+
+body{
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 /* Hide default navigation buttons */
 .swiper-container .swiper-button-next,
 .swiper-container .swiper-button-prev {
@@ -20,4 +24,6 @@
     overflow: hidden; /* Prevent content from overflowing */
   }
   
-  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

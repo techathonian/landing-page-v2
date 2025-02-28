@@ -31,6 +31,7 @@ const TracksSection = () => {
     })
 
   return (
+
      <motion.div 
         ref={ref}
         initial={{
@@ -52,18 +53,20 @@ const TracksSection = () => {
           <div className="head text-center font-[600] text-[24px]/[32px] md:text-[32px]/[36px]  lg:text-[40px]/[48px]">
             {TRACKCOMPONENT.title}
           </div>
-          <div className="px-3 body text-center text-[16px]/[24px] lg:text-[18px]/[24px]">
+          <div className="body text-center text-[16px]/[24px] lg:text-[18px]/[24px]">
             {TRACKCOMPONENT.content}
           </div>
         </div>
         
-        <div className="two flex flex-col gap-5 lg:flex-row items-center justify-center">
+        
+        <div className="two flex flex-col gap-5 lg:flex-row items-center justify-center overflow-x-hidden">
+          
         {/* ///// */}
       <motion.div 
-        initial={{opacity: 0, x: -10}}
+        initial={{opacity: 0, x: -100}}
           animate={
-            isInView ? {opacity: 1, x: 0}: {opacity: 0, x:-10}}
-          transition={{duration: 8.5}}  className="rounded-[24px] sub-1  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#E6EBFF] md:h-[612px] md:w-[584px] md:bg-[#E6EBFF] bg-[#ECF3FB]">
+            isInView ? {opacity: 1, x: 0}: {opacity: 0, x:-100}}
+          transition={{duration: 8.5}}  className="rounded-[24px] sub-1  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#E6EBFF] md:h-[612px] md:w-[584px] md:bg-[#E6EBFF] bg-[#ECF3FB] overflow-x-hidden">
             <div className="header ml-5  flex flex-col gap-4">
               <div className="flex gap-3 items-center pt-3">
                 <div className="svg">
@@ -75,7 +78,7 @@ const TracksSection = () => {
                     priority
                   />
                 </div>
-                <div className="kik text-[20px]/[28px] font-[500] text-[#350100] underline underline-offset-[11px] decoration-4">
+                <div className="kik  text-[20px]/[28px] font-[500] text-[#350100] underline underline-offset-[11px] decoration-4">
                   {TRACKCOMPONENT.tracks[0].title}
                 </div>
               </div>
@@ -116,9 +119,9 @@ const TracksSection = () => {
           </motion.div>
           {/**ghjfh */}
           <motion.div 
-        initial={{opacity: 0, x: 10}}
-          animate={ isInView ? {opacity: 1, x: 0} : {opacity: 0, x: 10}}
-          transition={{duration: 8.5}}  className="sub-2 rounded-[24px]  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#FCD1FF] md:h-[612px] md:w-[584px] bg-[#F0E1DC]">
+        initial={{opacity: 0, x: 100}}
+          animate={ isInView ? {opacity: 1, x: 0} : {opacity: 0, x: 100}}
+          transition={{duration: 8.5}}  className="overflow-x-hidden sub-2 rounded-[24px]  w-[340px] h-[514px] lg:w-[584px] lg:h-[612px] lg:bg-[#FCD1FF] md:h-[612px] md:w-[584px] bg-[#F0E1DC]">
             <div className="header ml-5 flex flex-col gap-4">
               <div className="flex gap-3 items-center ">
                 <div className="devg-svg pt-3">
@@ -172,10 +175,13 @@ const TracksSection = () => {
             </div>
           </motion.div>
         {/* ///// */}
+
         </div>
-        <div className="three"></div>
+        
+
+        {/* <div className="three"></div> */}
       </div>
-      <div className="bonus text-[14px]/[20px] font-[600] mt-4 text-center lg:text-start">BONUS: Get a Jobberman soft skill certificate on completion of the programme</div>
+      <div className="bonus text-[14px]/[20px] font-[600] overflow-hidden mt-4 text-center lg:text-start">BONUS: Get a Jobberman soft skill certificate on completion of the programme</div>
     </motion.div>
   );
 };

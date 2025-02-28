@@ -26,7 +26,7 @@ const SwiperCore = () => {
   }, []);
 
   return (
-    <div className="swiper-container relative  flex justify-center items-center bg-[#1B0028]">
+    <div className="swiper-container relative  flex justify-center items-center bg-[#1B0028] overflow-x-hidden">
       <Swiper
          spaceBetween={4}
          slidesPreview={1}
@@ -38,7 +38,7 @@ const SwiperCore = () => {
          modules = {[ Navigation, Autoplay]}
          autoplay={{delay: 2000, disableOnInteraction: false}}
          effect="creative"
-         onSwiper={(swiper) => (swiperRef.current = swiper)} // Assign the Swiper instance to the ref 
+         onSwiper={(swiper) => (swiperRef.current = swiper)}  
            style={{
         
         "--swiper-pagination-bottom" : "20px",

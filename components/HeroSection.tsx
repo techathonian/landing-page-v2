@@ -65,7 +65,7 @@ const HeroSection = () => {
                 whileHover={{scale: 1.2}}
                 whileTap={{scale: 0.9}}
                  initial={{opacity: 0, x: 10}}
-                 whileInView={{opacity: 1, x: 0}}
+                 animate={{opacity: 1, x: 0}}
                  transition={{duration: 4.1}}
                 className="md:w-full w-screen flex  items-center justify-center lg:block  ">
                   <Button 
@@ -79,7 +79,7 @@ const HeroSection = () => {
             <div  className="bullets text-end lg:text-center h-[116px] w-[300px] lg:w-[512px] md:w-full grid lg:grid-cols-2 md:grid-cols-2 gap-2">
               <motion.p 
                  initial={{opacity: 0, x: 30}}
-                 whileInView={ isInView ? {opacity: 1, x: -30} : {opacity: 0, x:30}}
+                 animate={ {opacity: 1, x: -30} }
                  transition={{duration: 4.7}}
                  className="pl-20 lg:pl-1 md:pl-1 ml-2 flex lg:flex-none items-center">
                 <AiOutlineCaretRight className="hidden lg:block" />{" "}
@@ -88,7 +88,7 @@ const HeroSection = () => {
               </motion.p>
               <motion.p 
                  initial={{opacity: 0, x: -30}}
-                 whileInView={ isInView ? {opacity: 1, x: 30} : {opacity: 0, x: -30}}
+                 animate={ {opacity: 1, x: 30} }
                  transition={{duration: 4.7}}
                  className="pl-14 lg:pl-1 md:pl-1 ml-2 flex lg:flex-none items-center">
                 <AiOutlineCaretRight className="hidden lg:block" />{" "}
@@ -98,7 +98,7 @@ const HeroSection = () => {
 
               <motion.p 
                  initial={{opacity: 0, x: 30}}
-                 whileInView={ isInView ? {opacity: 1, x: -30} : {opacity: 0, x: 30}}
+                animate={ {opacity: 1, x: -30} }
                  transition={{duration: 4.7}} className="pl-10 lg:pl-1 md:pl-1 md:pr-2 ml-2 flex lg:flex-none items-center ">
                 <AiOutlineCaretRight className="hidden lg:block" />{" "}
                 <VscDebugStart className="block lg:hidden" />
@@ -109,7 +109,7 @@ const HeroSection = () => {
               </motion.p>
               <motion.p 
                  initial={{opacity: 0, x: -30}}
-                 whileInView={ isInView ? {opacity: 1, x: 30} : {opacity: 0, x: -30}}
+                 animate={ {opacity: 1, x: 30}}
                  transition={{duration: 4.7}} className="pl-6 lg:pl-1 md:pl-1 ml-2 flex lg:flex-none items-center ">
                 <AiOutlineCaretRight className="hidden lg:block" />{" "}
                 <VscDebugStart className="block lg:hidden" />
@@ -146,7 +146,7 @@ const HeroSection = () => {
           initial={{opacity: 0, x: 50}}
           animate={{opacity: 1, x: 0}}
           transition={{duration: 2}}
-          className=" md:w-[521px] md:h-[531px] lg:w-[512px]  order-first lg:order-last lg:-mt-24  place-items-center">
+          className=" md:w-[521px] md:h-[531px] lg:w-[512px]  order-first lg:order-last lg:-mt-24  place-items-center overflow-hidden">
           <Image
             width={512}
             height={531}

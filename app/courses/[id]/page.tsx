@@ -12,6 +12,7 @@ import {
   NOCODINGTRACKS,
   PROGRAMMESCOMPONENT,
   TRACKCOMPONENT,
+  CORECOMPONENT
 } from "@/utils/data";
 import Footer from "@/components/Footer";
 
@@ -136,14 +137,13 @@ export default async function CourseDetails({
             </div>
           </div>
           <div className="w-[340px] md:w-[600px] flex flex-col items-center justify-center gap-8">
-            <div className="w-[324px] md:w-[584px] text-center  flex flex-col items-center justify-center gap-4">
-              <h1 className="text-[24px]/[32px] md:text-[32px]/[36px] font-[600]">
-                {PROGRAMMESCOMPONENT.takestep.title}
-              </h1>
-              <p className="text-[16px]/[24px] font-[400] md:text-[#141414]">
-                {PROGRAMMESCOMPONENT.takestep.content}
-              </p>
-            </div>
+            
+                  <div className="one mb-6 lg:w-[1200px] md:w-[712px] w-340px">
+                    <div className="head flex flex-col text-center text-[20px]/[28px] md:text-[28px]/[32px] text-[#545454] md:text-[#141414]  lg:text-[40px]/[48px] font-[500]">
+                      {COURSEDETAILSCOMPONENT.certification.title}
+                    </div>
+                    <div className="body text-center px-3 text-[16px]/[24px] md:text-[18px]/[24px] text-[#141414]  lg:text-[28px]/[32px] font-[400]">{COURSEDETAILSCOMPONENT.certification.description}</div>
+                  </div>
           </div>
           <div className="flex flex-col lg:flex-row overflow-hidden gap-4">
             <div className="ONE flex flex-col gap-4 mt-4">

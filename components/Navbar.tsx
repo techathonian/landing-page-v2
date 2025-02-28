@@ -15,7 +15,7 @@ const Navbar = () => {
          console.log("menu toggled");
        };
   return (
-    <div className="place-items-center font-[family-name:var(--font-montserrat)] grid grid-cols-2  md:grid-cols-3 lg:h-[48px] lg:w-[screen]">
+    <div className="place-items-center font-[family-name:var(--font-montserrat)] grid grid-cols-2  md:grid-cols-3   overflow-hidden w-full">
       <div className="">
       <Image 
           src='/techathon.svg'
@@ -26,7 +26,7 @@ const Navbar = () => {
             />
       </div>
     
-    <div className="transition delay-200 duration-300 ease-in-out text-2xl text-[#663BC4] col-start-3 col-end-4 lg:hidden md:col-start-1 md:col-end-2 md:row-start-1 place-items-end grid-flow-row" onClick={toggleMenu}>
+    <div className="text-2xl text-[#663BC4] col-start-3 col-end-4 lg:hidden md:col-start-1 md:col-end-2 md:row-start-1 place-items-end grid-flow-row" onClick={toggleMenu}>
     {!open ? <AiOutlineMenuFold /> : <FiXOctagon />}
     </div>
 
