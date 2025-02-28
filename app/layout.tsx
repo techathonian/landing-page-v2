@@ -4,14 +4,11 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Montserrat } from "next/font/google";
 
-
 const montserratSans = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "600"]
-})
-
-
+  weight: ["100", "300", "400", "500", "600"],
+});
 
 export const metadata: Metadata = {
   title: "Techathon",

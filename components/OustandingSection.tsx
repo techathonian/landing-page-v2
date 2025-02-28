@@ -1,10 +1,9 @@
-"use client"
-
+"use client";
 
 import { UNDERSTANDTECHATHONCOMPONENT } from "./../utils/data";
 import Image from "next/image";
 import { easeOut, motion, useInView } from "framer-motion";
-import React, { useRef } from "react"
+import React, { useRef } from "react";
 
 const gridContainerVariants = {
   hidden: { opacity: 0, x: -10 },
@@ -12,39 +11,44 @@ const gridContainerVariants = {
     opacity: 1,
     x: 0,
     transition: {
-      staggerChildren: 1.3, 
+      staggerChildren: 1.3,
     },
   },
 };
 
-
-  const gridSquareVariants = {
-     hidden: { opacity: 0 }, show: { opacity: 1 } 
-  }
+const gridSquareVariants = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
+};
 
 const OustandingSection = () => {
-
   const ref = useRef(null);
-    const isInView = useInView(ref, {
-        once: true
-    })
+  const isInView = useInView(ref, {
+    once: true,
+  });
   return (
-    <motion.div 
-        ref={ref}
-        initial={{
-           opacity: 0,
-           y:50
-        }}
-        animate={
-           isInView ? {
-               opacity: 1, y: 0
-           } : {
-               opacity: 0, y:50
-           }
-        }
-        transition={{
-           duration: 4
-        }} className="place-items-center">
+    <motion.div
+      ref={ref}
+      initial={{
+        opacity: 0,
+        y: 50,
+      }}
+      animate={
+        isInView
+          ? {
+              opacity: 1,
+              y: 0,
+            }
+          : {
+              opacity: 0,
+              y: 50,
+            }
+      }
+      transition={{
+        duration: 4,
+      }}
+      className="place-items-center"
+    >
       <div className="hHEAD flex flex-col mb-6 text-[#141414] lg:w-[1200px] md:w-[712px] w-340px">
         <div className="header text-center text-[24px]/[32px] md:text-[40px]/[48px] font-[600]">
           {UNDERSTANDTECHATHONCOMPONENT.title}
@@ -53,14 +57,17 @@ const OustandingSection = () => {
           {UNDERSTANDTECHATHONCOMPONENT.body}
         </div>
       </div>
-      <motion.div 
-           variants={gridContainerVariants}
-           initial="hidden"
-           whileInView="show"
-          className="grid grid-cols-1 lg:grid-cols-3 gap-3">
-        <motion.div 
+      <motion.div
         variants={gridContainerVariants}
-        style={{boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)"}} className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4">
+        initial="hidden"
+        whileInView="show"
+        className="grid grid-cols-1 lg:grid-cols-3 gap-3"
+      >
+        <motion.div
+          variants={gridContainerVariants}
+          style={{ boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)" }}
+          className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4"
+        >
           <div className="svg">
             <Image
               width={48}
@@ -77,9 +84,11 @@ const OustandingSection = () => {
             {UNDERSTANDTECHATHONCOMPONENT.stickers[0].description}
           </div>
         </motion.div>
-        <motion.div 
-        variants={gridContainerVariants}
-        style={{boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)"}} className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4">
+        <motion.div
+          variants={gridContainerVariants}
+          style={{ boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)" }}
+          className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4"
+        >
           <div className="svg">
             <Image
               width={48}
@@ -96,9 +105,11 @@ const OustandingSection = () => {
             {UNDERSTANDTECHATHONCOMPONENT.stickers[1].description}
           </div>
         </motion.div>
-        <motion.div 
-        variants={gridContainerVariants}
-        style={{boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)"}} className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4">
+        <motion.div
+          variants={gridContainerVariants}
+          style={{ boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)" }}
+          className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4"
+        >
           <div className="svg">
             <Image
               width={48}
@@ -115,9 +126,11 @@ const OustandingSection = () => {
             {UNDERSTANDTECHATHONCOMPONENT.stickers[2].description}
           </div>
         </motion.div>
-        <motion.div 
-        variants={gridContainerVariants}
-        style={{boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)"}} className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4">
+        <motion.div
+          variants={gridContainerVariants}
+          style={{ boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)" }}
+          className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4"
+        >
           <div className="svg">
             <Image
               width={48}
@@ -134,9 +147,11 @@ const OustandingSection = () => {
             {UNDERSTANDTECHATHONCOMPONENT.stickers[3].description}
           </div>
         </motion.div>
-        <motion.div 
-        variants={gridContainerVariants}
-        style={{boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)"}} className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4">
+        <motion.div
+          variants={gridContainerVariants}
+          style={{ boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)" }}
+          className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4"
+        >
           <div className="svg">
             <Image
               width={48}
@@ -153,9 +168,11 @@ const OustandingSection = () => {
             {UNDERSTANDTECHATHONCOMPONENT.stickers[4].description}
           </div>
         </motion.div>
-        <motion.div 
-        variants={gridContainerVariants}
-        style={{boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)"}} className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4">
+        <motion.div
+          variants={gridContainerVariants}
+          style={{ boxShadow: "-2px 2px 10px 0px hsla(0, 0%, 0%, 0.25)" }}
+          className="w-[340px] h-[308px] md:w-[380px] md:h-[332px] text-center rounded-2xl text-wrap flex flex-col justify-center items-center gap-4"
+        >
           <div className="svg">
             <Image
               width={48}
@@ -173,7 +190,6 @@ const OustandingSection = () => {
           </div>
         </motion.div>
       </motion.div>
-
     </motion.div>
   );
 };

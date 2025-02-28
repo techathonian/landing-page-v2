@@ -16,12 +16,7 @@ const SwiperComponent = () => {
   // Create a ref to hold the swiper instance
   const swiperRef = useRef(null);
 
-  useEffect(() => {
-    if (swiperRef.current) {
-      // swiperRef.current.swiper should be initialized here
-      console.log("Swiper initialized", swiperRef.current.swiper);
-    }
-  }, []);
+
 
   return (
     <div className="swiper-container relative w-full  md:w-screen lg:w-[1200px] flex justify-center items-center">
@@ -36,7 +31,7 @@ const SwiperComponent = () => {
         modules={[Pagination, Navigation]}
         onSwiper={(swiper) => (swiperRef.current = swiper)} // Assign the Swiper instance to the ref
         style={{
-          "--swiper-pagination-color" : "#1B0028",
+          "--swiper-pagination-color": "#1B0028",
         }}
       >
         <SwiperSlide className="place-items-center">

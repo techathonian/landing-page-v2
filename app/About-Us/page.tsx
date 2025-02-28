@@ -140,13 +140,12 @@ const AboutUs = () => {
             {KEYPERSONCOMPONENT.title}
           </motion.h1>
           <p>{KEYPERSONCOMPONENT.description}</p>
-          <motion.p
-          >
+          <motion.p>
             <p>
               <motion.span
-              initial={{ opacity: 0, y: -150 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 4 }}
+                initial={{ opacity: 0, y: -150 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 4 }}
                 className="lg:twxt-[20px]/[28px] font-[600]"
               >
                 {KEYPERSONCOMPONENT.persons[0].title}
@@ -155,9 +154,9 @@ const AboutUs = () => {
             </p>
             <p>
               <motion.span
-                 initial={{ opacity: 0, y: 150 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 4 }}
+                initial={{ opacity: 0, y: 150 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 4 }}
                 className="lg:twxt-[20px]/[28px] font-[600]"
               >
                 {KEYPERSONCOMPONENT.persons[1].title}
@@ -166,9 +165,9 @@ const AboutUs = () => {
             </p>
             <p>
               <motion.span
-                 initial={{ opacity: 0, y: -150 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 4 }}
+                initial={{ opacity: 0, y: -150 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 4 }}
                 className="lg:twxt-[20px]/[28px] font-[600]"
               >
                 {KEYPERSONCOMPONENT.persons[2].title}
@@ -177,9 +176,9 @@ const AboutUs = () => {
             </p>
             <p>
               <motion.span
-                 initial={{ opacity: 0, y: 150 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 4 }}
+                initial={{ opacity: 0, y: 150 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 4 }}
                 className="lg:twxt-[20px]/[28px] font-[600]"
               >
                 {KEYPERSONCOMPONENT.persons[3].title}
