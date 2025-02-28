@@ -2,6 +2,10 @@ export interface HeroContent {
 	id: string;
 	title: string;
 	body: string;
+	bullet1: string;
+	bullet2: string;
+	bullet3: string;
+	bullet4: string;
 }
 
 interface Features {
@@ -24,9 +28,14 @@ interface TrackBase {
 	subtitle: string;
 }
 interface Tracks extends TrackBase{
-	path: string;
-	front: string;
-	back: string;
+	path1: string;
+	path2?: string;
+	path3?: string;
+	coursea: string;
+	courseb: string;
+	coursec: string;
+	coursed: string;
+	coursef: string;
 }
 export interface TrackComponent{
 	id: string;
@@ -43,6 +52,7 @@ interface Content{
 }
 export interface EventComponent {
 	id: string;
+	header: string;
 	title: string;
 	content: Content[];
 } 
@@ -114,6 +124,7 @@ interface  Courses{
 	id: string;
 	title: string;
 	content: string;
+	link: string;
 }
 export interface CodingTracks{
 	id: string;
@@ -192,7 +203,8 @@ export interface KeyPersonComponent{
 	id: string;
 	title: string;
 	description: string;
-	persons: Persons[]
+	persons: Persons[];
+	summary: string;
 }
 export interface AboutEventComponent{
 	id: string;
@@ -203,40 +215,84 @@ export interface AboutEventComponent{
 
 
 //---------------------COURSE DETAILS------------------------////
-interface Common{
+// interface Common{
+// 	id: string;
+// 	title?: string; 
+// 	svg?: string;
+// }
+// interface  Highlight extends Common{
+// 	theme: string;
+// }
+// interface Summary extends Common{
+// 	description: string;
+// 	highlight:  Highlight[];
+// }
+// interface About extends Common{
+// 	body: string;
+// }
+// interface Details extends Common{
+// 	body: string[]
+// }
+// interface Course extends Common {
+// 	details: Details[]
+// }
+// interface  Certification extends Common{
+// 	description: string;
+// }
+// interface Path {
+// 	id: string;
+// 	summary: Summary;
+// 	image: string;
+// 	about: About;
+// 	course: Course;
+// }
+// export interface CourseDetailsComponent {
+// 	id: string;
+// 	path: Path[]
+// 	certification:  Certification
+// 	body: Body[]
+// 	cards: Card[]
+// }
+
+
+interface Samething{
 	id: string;
-	title?: string; 
+	title?: string;
+  }
+  interface Highlight extends Samething{
 	svg?: string;
-}
-interface  Highlight extends Common{
-	theme: string;
-}
-interface Summary extends Common{
-	description: string;
-	highlight:  Highlight[];
-}
-interface About extends Common{
-	body: string;
-}
-interface Details extends Common{
+	theme?: string;
+  }
+  interface Summary extends Samething{
+	  description: string;
+	  highlight: Highlight[]
+  }
+  interface About extends Samething{
+	  body: string;
+  }
+  interface Detailz  extends Samething{
+	svg: string;
 	body: string[]
-}
-interface Course extends Common {
-	details: Details[]
-}
-interface  Certification extends Common{
+  }
+  interface CourseContent extends Samething{
+	details: Detailz[]
+  }
+  interface Certification extends Samething{
 	description: string;
-}
-export interface CourseDetailsComponent {
+  }
+  interface CourseDetails{
 	id: string;
+	heading: string;
 	summary: Summary;
-	image: string;
+	img: string;
 	about: About;
-	course: Course;
-	certification:  Certification
-	body: Body[]
-	cards: Card[]
+	courseContent: CourseContent;
 }
+
+export interface MainDetailsComponent{
+	CourseDetail: CourseDetails[]
+	certification: Certification;
+  }
 /******COMPOENTS */
 
 // Button
