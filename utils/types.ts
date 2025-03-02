@@ -247,4 +247,10 @@ export interface ButtonProps {
 	handleClick?: () => void;
 }
 
-//
+// NAVLINKPROPS
+
+export interface NavLinkProps {
+	href: string;
+	label: string;
+	icon?: string;  
+  }
